@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Rolex Watch",
+    "description": "A rare vintage Rolex watch from the 1960s in excellent condition.",
+    "currentBidPrice": 12000,
+    "timeLeft": "2d 5h 30m",
+    "bidsCount": 15,
+    "image": "/assets/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "Antique Wooden Chest",
+    "description": "Beautifully carved antique wooden chest, perfect for collectors.",
+    "currentBidPrice": 450,
+    "timeLeft": "1d 12h 45m",
+    "bidsCount": 8,
+   "image": "/assets/Bid2-min.png"
+  },
+  {
+    "id": 3,
+    "title": "Classic Guitar",
+    "description": "Handcrafted classical guitar with rich sound and vintage look.",
+    "currentBidPrice": 800,
+    "timeLeft": "3d 2h 10m",
+    "bidsCount": 12,
+     "image": "/assets/Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "Luxury Handbag",
+    "description": "Designer luxury handbag made from premium leather, barely used.",
+    "currentBidPrice": 1500,
+    "timeLeft": "5h 50m",
+    "bidsCount": 20,
+     "image": "/assets/Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "Rare Comic Book",
+    "description": "First edition comic book from the 1940s, in mint condition.",
+    "currentBidPrice": 600,
+    "timeLeft": "6d 14h 5m",
+    "bidsCount": 5,
+    "image": "/assets/Bid5-min.png"
+  },
+  {
+    "id": 6,
+    "title": "Collectible Sneakers",
+    "description": "Limited edition sneakers, highly sought after by collectors.",
+    "currentBidPrice": 300,
+    "timeLeft": "12h 20m",
+    "bidsCount": 18,
+    "image": "/assets/Bid6-min.png"
+  }
+]
