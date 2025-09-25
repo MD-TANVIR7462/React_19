@@ -17,10 +17,10 @@ const Usernav = () => {
         <div className="flex items-center space-x-8 h-12">
           
             <a
-              className="text-ms font-medium   transition-colors duration-200 relative group text-white flex gap-1"
+              className="text-ms font-medium   transition-colors duration-200 relative group text-white flex gap-1 cursor-pointer "
             >
               <Lock className="w-5 h-5 "/> Login / Register
-              {/* <span className="absolute -bottom-3 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span> */}
+              <span className="absolute  left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
             </a>
         </div>
       </div>

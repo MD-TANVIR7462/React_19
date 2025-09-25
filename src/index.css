@@ -118,3 +118,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* custom css */
+.green-background{
+background-color: #61a741;
+}
+.green-color{
+  color: #61a741;
+}

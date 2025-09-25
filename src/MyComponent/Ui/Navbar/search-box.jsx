@@ -96,13 +96,13 @@ const SearchBox = () => {
   );
 
   return (
-    <div className="max-w-4xl mx-auto  px-4  relative">
+    <div className="max-w-6xl  mx-auto  px-4  relative">
       <Command className="rounded-md border   bg-white">
         <CommandInput
           placeholder="Search by brand or title..." 
           value={searchTerm}
           onValueChange={setSearchTerm}
-          className="text-base py-4 px-4 border-b border-gray-100"
+          className="text-base py-4 px-4 border-b border-gray-100 "
         />
 
         {searchTerm && (
@@ -171,7 +171,7 @@ const SearchBox = () => {
                           onClick={(e) => {
                             e.stopPropagation(), addToCart(product, e);
                           }}
-                          className="px-4 py-2  text-white rounded-sm bg-green-600 hover:bg-green-700 transition-all duration-200 shadow-sm hover:shadow-md font-medium text-sm cursor-pointer"
+                          className="px-4 py-2  text-white rounded-sm green-background active:bg-green-600 transition-all duration-200 shadow-sm hover:shadow-md font-medium text-sm cursor-pointer active:scale-95 hover:scale-100"
                         >
                           Cart
                         </button>

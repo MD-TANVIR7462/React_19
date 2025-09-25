@@ -38,7 +38,7 @@ export default function TopBar({
 
   return (
     <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8  ">
-      <div className="flex items-center justify-between my-2 md:my-4 h-16">
+      <div className="flex items-center justify-between my-2 md:my-4 ">
         {/* Left side - Logo and Company Name */}
         <div className="flex items-center space-x-3">
           <div className="flex-shrink-0">
@@ -47,18 +47,18 @@ export default function TopBar({
         </div>
 
         {/* Center - Desktop Search */}
-        <div className="hidden md:block flex-1 max-w-lg mx-6">
+        <div className="hidden lg:block flex-1 max-w-lg mx-6">
           <SearchBox compact={true} />
         </div>
 
         {/* Right side - Desktop */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center space-x-2">
             {isLoggedIn && (
               <div className="relative" ref={profileRef}>
                 <Button
                   variant="ghost"
-                  className="text-foreground hover:text-primary transition-colors"
+                  className="text-foreground hover:text-primary transition-colors cursor-pointer"
                   onMouseEnter={() => setShowProfileDropdown(true)}
                   onClick={() => setShowProfileDropdown(!showProfileDropdown)}
                 >
@@ -101,7 +101,7 @@ export default function TopBar({
                     <hr className="my-1 border-border" />
                     <button
                       onClick={onLoginToggle}
-                      className="flex items-center w-full px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors text-left"
+                      className="flex items-center w-full px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors text-left cursor-pointer"
                     >
                       <LogOut className="w-4 h-4 mr-2" />
                       Logout
@@ -116,14 +116,14 @@ export default function TopBar({
           <Button
             variant="ghost"
             size="icon"
-            className="relative transition-colors hover:bg-muted"
+            className="relative transition-colors hover:bg-muted cursor-pointer"
             onClick={onCartClick}
           >
             <ShoppingCart className="w-5 h-5" />
             {cartCount > 0 && (
               <Badge
                 variant="destructive"
-                className="absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center p-0 text-xs animate-pulse"
+                className="absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center p-0 text-xs green-background"
               >
                 {cartCount}
               </Badge>
@@ -132,7 +132,7 @@ export default function TopBar({
         </div>
 
         {/* Mobile Controls */}
-        <div className="md:hidden flex items-center space-x-3">
+        <div className="lg:hidden flex items-center space-x-3">
           {/* Mobile Search */}
           <div className="flex-1 max-w-xs" ref={searchRef}>
             <Button
@@ -151,14 +151,13 @@ export default function TopBar({
                   onClick={() => setShowMobileSearch(false)}
                 />
                 <div className="fixed inset-x-4 top-20 bg-background border border-border rounded-xl shadow-xl z-50 animate-in slide-in-from-top-2 duration-200">
-                  <div className="p-4">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Search className="w-5 h-5 text-muted-foreground" />
-                      <SearchBox compact={true} className="flex-1" />
-                      <Button variant="ghost" size="icon" onClick={() => setShowMobileSearch(false)}>
-                        <X className="w-5 h-5" />
-                      </Button>
-                    </div>
+                  <div className="p-4 w-full ">
+                  <div className="ms-auto w-fit mb-2">
+                      <Button variant="ghost" size="icon" className={"cursor-pointer"}  onClick={() => setShowMobileSearch(false)}>
+                      <X className="w-5 h-5 " />
+                    </Button>
+                  </div>
+                    <SearchBox compact={true} className="" />
                   </div>
                 </div>
               </>
@@ -168,10 +167,23 @@ export default function TopBar({
           {/* Mobile Profile */}
           {isLoggedIn ? (
             <div className="relative" ref={profileRef}>
-              <Button variant="ghost" size="icon" onClick={() => setShowProfileDropdown(!showProfileDropdown)}>
+              {/* <Button variant="ghost" size="icon" onClick={() => setShowProfileDropdown(!showProfileDropdown)}>
                 <User className="w-5 h-5" />
-              </Button>
+              </Button> */}
+              <Button
+                variant="ghost"
+                className="text-foreground hover:text-primary transition-colors cursor-pointer"
+                onClick={() => setShowProfileDropdown(!showProfileDropdown)}
+              >
+                <User className="w-6 h-6 " />
 
+                <Badge
+                  variant="ghost "
+                  className="absolute -top-0.5 -right-0.5  w-5 h-5 border-none flex items-center justify-center p-0 text-xs "
+                >
+                  <ChevronDown className="w-2 h-2" />
+                </Badge>
+              </Button>
               {showProfileDropdown && (
                 <div className="absolute right-0 top-full mt-2 w-48 bg-popover border border-border rounded-md shadow-lg py-1 z-50 animate-in slide-in-from-top-2 duration-200">
                   <a
@@ -200,7 +212,7 @@ export default function TopBar({
             </div>
           ) : (
             <Button variant="ghost" size="icon" onClick={onLoginToggle}>
-              <User className="w-5 h-5" />
+              <User className="w-5  h-5" />
             </Button>
           )}
 
@@ -210,7 +222,7 @@ export default function TopBar({
             {cartCount > 0 && (
               <Badge
                 variant="destructive"
-                className="absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center p-0 text-xs animate-pulse"
+                className="absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center p-0 text-xs green-background "
               >
                 {cartCount}
               </Badge>

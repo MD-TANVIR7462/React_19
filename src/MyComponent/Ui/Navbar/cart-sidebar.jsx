@@ -30,7 +30,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
             variant="ghost"
             size="icon"
             onClick={onClose}
-            className="hover:bg-muted rounded-full transition-colors"
+            className="hover:bg-muted rounded-full transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </Button>
@@ -71,7 +71,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                     <Button
                       variant="outline"
                       size="icon"
-                      className="w-8 h-8 bg-background hover:bg-muted transition-colors"
+                      className="w-8 h-8 bg-background hover:bg-muted transition-colors cursor-pointer"
                       data-cart-control="true"
                       onClick={(e) => {
                         e.stopPropagation()
@@ -87,7 +87,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                     <Button
                       variant="outline"
                       size="icon"
-                      className="w-8 h-8 bg-background hover:bg-muted transition-colors"
+                      className="w-8 h-8 bg-background hover:bg-muted transition-colors cursor-pointer"
                       data-cart-control="true"
                       onClick={(e) => {
                         e.stopPropagation()
@@ -103,7 +103,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="w-8 h-8 text-destructive hover:text-destructive hover:bg-destructive/10 rounded-full transition-colors"
+                    className="w-8 h-8 text-destructive hover:text-destructive hover:bg-destructive/10 rounded-full transition-colors cursor-pointer"
                     data-cart-control="true"
                     onClick={(e) => {
                       e.stopPropagation()
@@ -123,13 +123,13 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
           <div className="border-t border-border p-4 bg-muted/5">
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg font-semibold">Total:</span>
-              <span className="text-xl font-bold text-primary">${cartTotal.toLocaleString()}</span>
+              <span className="text-xl font-bold text-primary"><span className="green-color">$</span>{cartTotal.toLocaleString()}</span>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              <Button variant="outline" className="w-full bg-background hover:bg-muted transition-colors">
+              <Button variant="outline" className="w-full bg-background hover:bg-muted transition-colors cursor-pointer">
                 View Cart
               </Button>
-              <Button className="w-full">Checkout</Button>
+              <Button className="w-full cursor-pointer green-background">Checkout</Button>
             </div>
           </div>
         )}

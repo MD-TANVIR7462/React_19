@@ -1,4 +1,4 @@
-import { Home, User, Settings, LogOut, ShoppingCart } from "lucide-react";
+import { Home, User, Settings, LogOut, ShoppingCart, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navigationItems = [
@@ -15,7 +15,7 @@ export default function MobileMenu({ isOpen, onClose, isLoggedIn, onLoginToggle 
     <>
       {/* Backdrop */}
       <div
-        className={`md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+        className={`lg:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={onClose}
@@ -23,20 +23,20 @@ export default function MobileMenu({ isOpen, onClose, isLoggedIn, onLoginToggle 
 
       {/* Mobile Menu Sidebar */}
       <div
-        className={`md:hidden fixed inset-y-0 right-0 w-80 bg-background border-l border-border shadow-xl transform transition-transform duration-300 ease-out z-50 ${
+        className={`lg:hidden fixed inset-y-0 right-0 w-80 bg-background border-l border-border shadow-xl transform transition-transform duration-300 ease-out z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-4 border-b border-border">
-            <h2 className="text-lg font-semibold">Menu</h2>
+            <h2 className="text-lg font-semibold">Mirtex</h2>
             <Button
               variant="ghost"
               size="icon"
               onClick={onClose}
               className="rounded-full hover:bg-muted transition-colors"
             >
-              <Home className="w-5 h-5" />
+              <X className="w-5 h-5" />
             </Button>
           </div>
 
