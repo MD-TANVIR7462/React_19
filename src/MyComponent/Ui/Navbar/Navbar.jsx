@@ -19,7 +19,7 @@ const cartItems = [
   { id: 36, name: "MacBook Air", price: 1299, quantity: 1, image: "/assets/Bid3-min.png" },
   { id: 15, name: "iPhone 15 Pro", price: 999, quantity: 1, image: "/assets/Bid2-min.png" },
   { id: 24, name: "AirPods Pro", price: 249, quantity: 2, image: "/assets/Bid4-min.png" },
-  { id: 33, name: "MacBook Air", price: 1299, quantity: 1, image: "/assets/Bid3-min.png" },
+  { id: 333, name: "MacBook Air", price: 1299, quantity: 1, image: "/assets/Bid3-min.png" },
 ];
 
 export default function Navbar() {

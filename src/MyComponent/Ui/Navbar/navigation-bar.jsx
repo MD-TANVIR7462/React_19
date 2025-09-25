@@ -18,7 +18,7 @@ export default function NavigationBar() {
             <a
               key={item.name}
               href={item.href}
-              className={`text-ms font-medium text-muted-foreground  transition-colors duration-200 relative group hover:text-[#61a741] ${item.name==="Home"?"green-background text-white px-24 flex items-center h-full ":""}`}
+              className={`text-ms font-medium text-muted-foreground  transition-colors duration-200 relative group  ${item.name==="Home"?"green-background text-white px-24 flex items-center h-full ":"hover:text-[#61a741]"}`}
             >
              <span className="my-auto"> {item.name}</span>
               {
