@@ -1,28 +1,12 @@
-import { Suspense, useEffect, useState } from "react";
-import ActiveAction from "./MyComponent/ActiveAction";
-import Banner from "./MyComponent/Banner";
-import Navbar from "./MyComponent/Navbar";
-import Loader from "./MyComponent/Loader";
-import SearchBox from "./MyComponent/SearchBox";
-import { fetchItems } from "./lib/customeFunc";
-import Addproduct from "./MyComponent/AddproductBox";
+import React from "react";
+import Navbar from "./MyComponent/Ui/Navbar/Navbar";
 
-// fetch data end...
+
 const App = () => {
-  const data = fetchItems("/items.json");
-  const product = fetchItems("https://shipfinity-backend.vercel.app/api/products");
-
   return (
-    <div className="max-w-[1720px] mx-auto">
+    <div>
       <Navbar />
-      {/* <Banner /> */}
-      {/* <Suspense fallback={<Loader/>}>
-        <ActiveAction data={data} />
-      </Suspense> */}
-      <Suspense fallback={<Loader />}>
-        <SearchBox products={product} />
-      </Suspense>
-      {/* <Addproduct/> */}
+      <div className="max-w-[1400px] mx-auto px-4 border"></div>
     </div>
   );
 };
