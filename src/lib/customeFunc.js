@@ -3,6 +3,7 @@ export const fetchItems = async (endpoint) => {
     const result = await fetch(`${endpoint}`);
     const res = result.json();
     return res;
+  // eslint-disable-next-line no-unused-vars
   } catch (err) {
     alert("Cant fetch data!");
   }

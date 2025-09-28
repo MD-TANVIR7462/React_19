@@ -1,13 +1,11 @@
-import React from "react";
-import Navbar from "./MyComponent/Ui/Navbar/Navbar";
-
-
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/all-routes";
+import './index.css';
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="max-w-[1400px] mx-auto px-4 "></div>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 };
 

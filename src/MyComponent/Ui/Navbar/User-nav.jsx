@@ -2,14 +2,14 @@ import { Lock } from "lucide-react";
 import React from "react";
 
 const Usernav = () => {
-  const navigationItems = [
-    { name: "Home", href: "/" },
-    { name: "Shop", href: "/shop" },
-    { name: "About", href: "/about" },
-    { name: "Gift", href: "/gift" },
-    { name: "Islamic", href: "/islamic" },
-    { name: "Contact", href: "/contact" },
-  ];
+  // const navigationItems = [
+  //   { name: "Home", href: "/" },
+  //   { name: "Shop", href: "/shop" },
+  //   { name: "About", href: "/about" },
+  //   { name: "Gift", href: "/gift" },
+  //   { name: "Islamic", href: "/islamic" },
+  //   { name: "Contact", href: "/contact" },
+  // ];
 
   return (
     <div className="block  border-t border-border bg-[#61a741]">

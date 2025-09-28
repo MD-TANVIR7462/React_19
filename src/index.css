@@ -126,3 +126,222 @@ background-color: #61a741;
 .green-color{
   color: #61a741;
 }
+
+
+
+
+/* banner */
+.banner-block .banner-item:hover .banner-img img {
+    opacity: 0.9;
+    transform: scale(1.07);
+}
+
+.banner-block .banner-ads-item img {
+    transition: 0.5s;
+}
+
+.banner-block .banner-ads-item:hover img {
+    transform: scale(1.1);
+}
+
+.banner-top {
+    &.style-four {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: var(--black);
+            color: var(--white);
+
+            &::after {
+                font-size: 16px;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 0;
+            justify-content: flex-start;
+        }
+
+        .swiper-button-next {
+            right: 0;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 640px) {
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &.bg-green {
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: var(--green);
+            color: var(--black);
+        }
+    }
+}
+
+
+
+.image-comparison {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tab-features-block .banner:hover .heading4 {
+    text-decoration: underline;
+}
+
+.tab-features-block .banner:hover img {
+    transform: scale(1.05);
+}
+
+.image-comparison__range {
+    @media (hover) {
+        &:hover~.image-comparison__slider .image-comparison__thumb {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+
+.image-comparison__image-wrapper--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% + 1px);
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-comparison__figure {
+    margin: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f5f5f5;
+    }
+
+    &:not(&--overlay) {
+        position: relative;
+        padding-top: 66.666666667%;
+    }
+}
+
+.image-comparison__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+    overflow: hidden;
+
+    .image-comparison__figure--overlay & {
+        z-index: 1;
+    }
+
+    &.after {
+        height: unset;
+        width: 100%;
+        right: 0;
+        left: unset;
+    }
+}
+
+.image-comparison__caption {
+    position: absolute;
+
+    @media screen and (max-width: 40.063em) {
+        font-size: 12px;
+    }
+}
+
+.image-comparison__caption--before {
+    left: 12px;
+    z-index: 2;
+}
+
+.image-comparison__caption--after {
+    right: 12px;
+    text-align: right;
+}
+
+.image-comparison__caption-body {
+    max-width: 40vmin;
+    padding: 6px 12px;
+}
+
+.image-comparison__slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-background);
+    transition: background-color 0.3s ease-in-out;
+    z-index: 10;
+
+    .image-comparison__range--active~& {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+
+.image-comparison__range::-webkit-slider-runnable-track {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+.image-comparison__range::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+.image-comparison__range::-webkit-slider-thumb {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+.image-comparison__range::-ms-fill-lower {
+    background-color: transparent;
+}
+
+.image-comparison__range::-ms-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: transparent;
+    outline: none;
+    cursor: col-resize;
+}
+
+.image-comparison__range::-ms-thumb {
+    width: 0.5%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image-comparison__range::-ms-tooltip {
+    display: none;
+}

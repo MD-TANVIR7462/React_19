@@ -199,7 +199,7 @@
 // export default SearchBox;
 
 
-"use client"
+
 
 import { Command, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
 import { getAllProductsFromDB } from "@/lib/customeFunc"
@@ -210,7 +210,7 @@ const SearchBox = () => {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(false)
   const [quantities, setQuantities] = useState({})
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [ setSelectedProduct] = useState(null)
 
   // fetch products with debounce
   useEffect(() => {

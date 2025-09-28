@@ -8,7 +8,7 @@ const SearchBox = () => {
   const [loading, setLoading] = useState(false);
   const [quantities, setQuantities] = useState({});
   const [selectedProduct, setSelectedProduct] = useState(null);
-
+  console.log(selectedProduct);
   // fetch products with debounce
   useEffect(() => {
     if (!searchTerm.trim()) {
