@@ -40,20 +40,20 @@ export default function TopBar({
     <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8  ">
       <div className="flex items-center justify-between my-2 md:my-4 ">
         {/* Left side - Logo and Company Name */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 ">
           <div className="flex-shrink-0">
-            <img src="\brand_logo.png" alt="" className=" h-20" />
+            <img src="\brand_logo.png" alt="" className="h-14 md:h-20" />
           </div>
         </div>
 
         {/* Center - Desktop Search */}
-        <div className="hidden lg:block flex-1 max-w-lg mx-6">
+        <div className="hidden lg:block flex-1 max-w-2xl mx-6">
           <SearchBox compact={true} />
         </div>
 
         {/* Right side - Desktop */}
         <div className="hidden lg:flex items-center space-x-4">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center  space-x-2">
             {isLoggedIn && (
               <div className="relative" ref={profileRef}>
                 <Button
@@ -132,7 +132,7 @@ export default function TopBar({
         </div>
 
         {/* Mobile Controls */}
-        <div className="lg:hidden flex items-center space-x-3">
+        <div className="lg:hidden flex items-center space-x-1 ">
           {/* Mobile Search */}
           <div className="flex-1 max-w-xs" ref={searchRef}>
             <Button
@@ -141,7 +141,7 @@ export default function TopBar({
               onClick={() => setShowMobileSearch(!showMobileSearch)}
               className="w-10 h-10 transition-colors"
             >
-              <Search className="w-5 h-5" />
+              <Search className="w-4 h-4" />
             </Button>
 
             {showMobileSearch && (
@@ -154,7 +154,7 @@ export default function TopBar({
                   <div className="p-4 w-full ">
                   <div className="ms-auto w-fit mb-2">
                       <Button variant="ghost" size="icon" className={"cursor-pointer"}  onClick={() => setShowMobileSearch(false)}>
-                      <X className="w-5 h-5 " />
+                      <X className="w-4 h-4 " />
                     </Button>
                   </div>
                     <SearchBox compact={true} className="" />
@@ -175,7 +175,7 @@ export default function TopBar({
                 className="text-foreground hover:text-primary transition-colors cursor-pointer"
                 onClick={() => setShowProfileDropdown(!showProfileDropdown)}
               >
-                <User className="w-6 h-6 " />
+                <User className="w-4 h-4 " />
 
                 <Badge
                   variant="ghost "

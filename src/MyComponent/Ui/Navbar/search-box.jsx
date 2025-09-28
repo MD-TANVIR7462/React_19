@@ -96,8 +96,8 @@ const SearchBox = () => {
   );
 
   return (
-    <div className="max-w-6xl  mx-auto  px-4  relative">
-      <Command className="rounded-md border   bg-white">
+    <div className="mx-auto  px-4  relative">
+      <Command className="rounded-sm border   bg-white">
         <CommandInput
           placeholder="Search by brand or title..."
           value={searchTerm}
@@ -106,8 +106,8 @@ const SearchBox = () => {
         />
 
         {searchTerm && (
-          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-            <CommandList className="max-h-96 overflow-auto">
+          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-sm shadow-lg z-50">
+            <CommandList className="max-h-96 overflow-auto ">
               {loading ? (
                 <LoadingSpinner />
               ) : products.length === 0 ? (
