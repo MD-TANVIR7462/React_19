@@ -11,7 +11,7 @@ export const fetchItems = async (endpoint) => {
 export const getAllProductsFromDB = async (query) => {
   try {
     const res = await fetch(
-      `http://localhost:5000/api/products2?search=${query}`
+      `https://shipfinity-backend.vercel.app/api/products2?search=${query}`
     );
     
     const data = await res.json();

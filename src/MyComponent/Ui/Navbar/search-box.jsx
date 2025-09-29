@@ -1,5 +1,6 @@
 import { Command, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { getAllProductsFromDB } from "@/lib/customeFunc";
+
 import { useState, useEffect } from "react";
 
 const SearchBox = () => {
@@ -20,7 +21,8 @@ const SearchBox = () => {
       setLoading(true);
       try {
         const result = await getAllProductsFromDB(searchTerm);
-        setProducts(result.data.data || []);
+        setProducts(result?.data?.data || []);
+        console.log(result);
       } catch (error) {
         console.error("Error fetching products:", error);
         setProducts([]);
