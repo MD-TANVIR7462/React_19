@@ -1,10 +1,10 @@
-import Banner from '@/MyComponent/Main/Home/BannerCarousel';
+import HeroSlider from '@/MyComponent/Main/Home/BannerCarousel';
 import React from 'react';
 
 const Home = () => {
     return (
         <div>
-              <Banner />
+              <HeroSlider />
         </div>
     );
 };
