@@ -23,7 +23,7 @@
       title: "Your one-stop shop for wholesale",
       description:
         "Fitness equipment, sports gear, camping essentials, and outdoor adventure products for active lifestyles.",
-      image: "https://testmirtextrading.siscotech.com/admin/views/uploads/slider/md/20221219010100.jpg",
+      image: "https://testmirtextrading.siscotech.com/admin/views/uploads/slider/md/20250930013859.jpg",
       imageAlt: "Sports and outdoor wholesale products",
     },
   ];

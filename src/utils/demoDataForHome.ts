@@ -89,40 +89,4 @@ export const samsungWatch4 = {
   releaseDate: '2024-03-10',
 };
 
-export const categoriesData = [
-  {
-    id: 1,
-    name: 'Desktop',
-    image: 'https://m.media-amazon.com/images/I/615dO345QeL.jpg',
-  },
-  {
-    id: 3,
-    name: 'SmartPhone',
-    image:
-      'https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S22-5G-Violet-6458.jpg',
-  },
-  {
-    id: 4,
-    name: 'Watch',
-    image:
-      'https://rolex.torres.pt/wp-content/uploads/2022/03/m126610ln-0001_collection_upright_landscape.jpg',
-  },
-  {
-    id: 5,
-    name: 'Headphone',
-    image:
-      'https://store.sony.co.nz/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw72e2d384/images/WH1000XM4S/WH1000XM4S.png',
-  },
-  {
-    id: 6,
-    name: 'Fashion',
-    image:
-      'https://res.cloudinary.com/dzqkcbgew/image/upload/v1710831266/nike_zmyce6.png',
-  },
-  {
-    id: 7,
-    name: 'Accessories',
-    image:
-      'https://www.ryanscomputers.com/storage/products/main/amazon-echo-dot-4th-gen-smart-speaker-with-alexa-41609308368.webp',
-  },
-];
+

@@ -27,8 +27,8 @@ const HeroSlider = () => {
     },
   });
   return (
-    <section className="w-full bg-background cursor-grab">
-      <div className="lg:container mx-auto pt-2 md:pt-4 lg:pt-8">
+    <section className="w-full bg-[#f3f5f6] cursor-grab">
+      <div className=" mx-auto pt-2 md:pt-4 lg:pt-8 ">
         <div className="flex flex-col lg:flex-row gap-6 h-full w-full">
           {/* Main Slider */}
           <div className="lg:w-2/3 w-full  h-[340px] sm:h-[420px] md:h-[470px] ">
@@ -65,7 +65,7 @@ const HeroSlider = () => {
                             variants={fadeUp(0)}
                             initial="hidden"
                             animate={isActive ? "show" : "hidden"}
-                            className="hidden sm:inline-block text-xs font-semibold uppercase tracking-wider text-muted-foreground bg-white/80 px-3 py-1 lg:rounded-lg "
+                            className="hidden sm:inline-block text-xs font-semibold uppercase tracking-wider text-muted-foreground bg-white/80 px-3 py-1 rounded-sm "
                           >
                             {slide.badge}
                           </motion.span>
@@ -123,18 +123,19 @@ const HeroSlider = () => {
           {/* Banner Ads */}
           <div className="lg:w-1/3 w-full hidden lg:block">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 h-full ">
-              {banners?.map((banner, index) => (
+              {banners?.map((banner) => (
                 <div
                   style={{
                     backgroundImage: `url(${banner.image})`,
-                    backgroundSize: "100%",
+                    height: "100%",
+                    backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                   }}
                   key={banner.id}
                   onClick={() => handleBannerClick(banner.type)}
-                  className={` rounded-md cursor-pointer  transition-all duration-600  ${index === 1 ? "lg:mt-0" : ""}`}
-                  onMouseEnter={(e) => (e.currentTarget.style.backgroundSize = "110%")}
+                  className={` rounded-md cursor-pointer  transition-all duration-600   `}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundSize = "107%")}
                   onMouseLeave={(e) => (e.currentTarget.style.backgroundSize = "100%")}
                 >
                   {/* Content */}

@@ -1,12 +1,14 @@
-import HeroSlider from '@/MyComponent/Main/Home/BannerCarousel';
-import React from 'react';
+import HeroSlider from "@/MyComponent/Main/Home/BannerCarousel";
+import FeatureSummary from "@/MyComponent/Main/Home/FeatureSummary";
+import React from "react";
 
 const Home = () => {
-    return (
-        <div>
-              <HeroSlider />
-        </div>
-    );
+  return (
+    <>
+      <HeroSlider />
+      <FeatureSummary />
+    </>
+  );
 };
 
 export default Home;
