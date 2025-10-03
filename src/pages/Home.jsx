@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <HeroSlider /> 
       <FeatureSummary />
-      {/* <AgingReport  /> */}
+      <AgingReport  />
     </>
   );
 };
