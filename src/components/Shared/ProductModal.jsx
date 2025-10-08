@@ -5,7 +5,6 @@ import { X, ChevronLeft, ChevronRight, ShoppingCart, Package, Ruler } from "luci
 import { Button } from "@/components/ui/button";
 import { Modal } from "../ui/Modal/Modal";
 
-
 const ProductModal = ({ product, isOpen, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -49,14 +48,14 @@ const ProductModal = ({ product, isOpen, onClose }) => {
               <>
                 <button
                   onClick={prevImage}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all cursor-pointer"
                   aria-label="Previous image"
                 >
                   <ChevronLeft className="w-5 h-5 text-gray-800" />
                 </button>
                 <button
                   onClick={nextImage}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all cursor-pointer"
                   aria-label="Next image"
                 >
                   <ChevronRight className="w-5 h-5 text-gray-800" />
@@ -77,8 +76,6 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                         ? "border-orange-400  border-[2px]"
                         : "border-gray-100 hover:border-gray-300 transition-colors duration-200"
                     }`}
-
-          
                   >
                     <img src={image} alt={`Thumbnail ${index + 1}`} className="w-full h-full" />
                   </motion.button>

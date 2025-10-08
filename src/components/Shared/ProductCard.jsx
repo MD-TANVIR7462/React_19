@@ -54,6 +54,9 @@ const ProductCard = ({ product, onClick }) => {
       </div>
 
       <div className="p-3">
+        <h3 className="font-medium text-gray-500 mb-2   transition-colors">
+          {product.category}
+        </h3>
         <h3 className="font-medium text-gray-800 mb-2 line-clamp-1 group-hover:text-orange-500 transition-colors">
           {product.name}
         </h3>
@@ -65,8 +68,8 @@ const ProductCard = ({ product, onClick }) => {
           )}
         </div>
 
-        <p className="text-sm text-gray-600 mb-1 line-clamp-1">sdfsd{product.code}</p>
-        {product.sizes && <p className="text-xs text-orange-500 line-clamp-1">{product.sizes}</p>}
+        <p className="text-sm text-gray-600 mb-1 line-clamp-1 font-semibold"><span className="text-orange-500 ">Pack:</span> {product.code}</p>
+        {product.sizes && <p className="text-xs  line-clamp-1 font-semibold text-gray-600"><span className="text-orange-500 ">Dim:</span>  {product.sizes}</p>}
       </div>
     </motion.div>
   );
