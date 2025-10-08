@@ -9,6 +9,14 @@ export const fetchItems = async (endpoint) => {
     alert("Cant fetch data!");
   }
 };
+
+export const usePromise = async({endpoint})=>{
+const result = await fetch(`${endpoint}`);
+const res = result.json();
+return res;
+}
+
+
 export const getAllProductsFromDB = async (query) => {
   try {
     const res = await fetch(

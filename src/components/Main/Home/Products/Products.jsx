@@ -2,7 +2,6 @@ import ProductModal from "@/components/Shared/ProductModal";
 import { fetchItems } from "@/utils/customeFunc";
 import { useEffect, useState } from "react";
 import Productindex from "./ProductsIndex";
-import Loader from "@/components/Shared/Loader";
 
 const Product = () => {
   const [productData, setProductData] = useState(null);

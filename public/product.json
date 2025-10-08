@@ -1,9 +1,9 @@
 [
   {
     "id": "gift-1",
-    "name": "clocks Glass Vase",
+    "name": "22-587",
     "price": 8.0,
-    "code": "4 PCS/CTN Size:",
+    "code": "Pack: 4 PCS/CTN Size:",
     "sizes": "13x13x18",
     "description": "Elegant decorative glass vase perfect for home decor. Features intricate designs and premium quality materials.",
     "images": [
@@ -16,9 +16,9 @@
   },
   {
     "id": "gift-2",
-    "name": "3D Resin Coaster Set",
+    "name": "22-587",
     "price": 10.0,
-    "code": "3D RESIN",
+    "code": "Pack: 3D RESIN",
     "sizes": "Set of 3",
     "description": "Beautiful 3D resin coasters that add a modern touch to any table setting.",
     "images": [
@@ -33,9 +33,9 @@
   },
   {
     "id": "gift-3",
-    "name": "Premium Serving Tray",
+    "name": "22-587",
     "price": 12.0,
-    "code": "4 PCS/CTN",
+    "code": "Pack: 4 PCS/CTN",
     "sizes": "20x15",
     "description": "Multi-purpose serving tray with elegant finish, perfect for entertaining guests.",
     "images": [
@@ -50,9 +50,9 @@
   },
   {
     "id": "gift-4",
-    "name": "Resin Ring Holder",
+    "name": "22-587",
     "price": 15.0,
-    "code": "RESIN Size:",
+    "code": "Pack: RESIN Size:",
     "sizes": "18x12",
     "description": "Stylish resin ring holder for organizing your jewelry collection.",
     "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/23-089.png"],
@@ -61,9 +61,9 @@
   },
   {
     "id": "gift-5",
-    "name": "clocks Bamboo Vase",
+    "name": "22-587",
     "price": 9.0,
-    "code": "6 PCS/CTN",
+    "code": "Pack: 6 PCS/CTN",
     "sizes": "10x10x15",
     "description": "Natural bamboo vase with modern design, perfect for any room.",
     "images": [
@@ -78,9 +78,9 @@
 
   {
     "id": "everyday-1",
-    "name": "Luxury Bath Mat",
+   "name": "22-587",
     "price": 6.0,
-    "code": "4 PCS/CTN",
+    "code": "Pack: 4 PCS/CTN",
     "sizes": "40x60",
     "description": "Soft and absorbent bath mat for everyday use. Machine washable.",
     "images": [
@@ -93,9 +93,9 @@
   },
   {
     "id": "everyday-2",
-    "name": "Ceramic Serving Platter",
+   "name": "22-587",
     "price": 8.0,
-    "code": "20 PCS/CTN",
+    "code": "Pack: 20 PCS/CTN",
     "sizes": "11\"x7\"(0.3\")",
     "description": "Elegant ceramic platter for serving appetizers and desserts.",
     "images": [
@@ -109,9 +109,9 @@
   },
   {
     "id": "everyday-3",
-    "name": "Bamboo Door Curtain",
+"name": "22-587",
     "price": 12.0,
-    "code": "4 PCS/CTN Size:",
+    "code": "Pack: 4 PCS/CTN Size:",
     "sizes": "90\"(H)\"X 33\"",
     "description": "Natural bamboo curtain for doors and windows. Adds privacy and style.",
     "images": [
@@ -126,7 +126,7 @@
     "id": "everyday-4",
     "name": "clocks Window Film",
     "price": 10.0,
-    "code": "12 PCS/CTN",
+    "code": "Pack: 12 PCS/CTN",
     "sizes": "39\"X 70\" MA...",
     "description": "Privacy window film with decorative patterns. Easy to install.",
     "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png"],
@@ -137,7 +137,7 @@
     "id": "everyday-5",
     "name": "Aromatherapy Candle Set",
     "price": 5.0,
-    "code": "72 PCS/CTN",
+    "code": "Pack: 72 PCS/CTN",
     "sizes": "(68 ML)",
     "description": "Scented candles for relaxation and ambiance. Long-lasting fragrance.",
     "images": [
@@ -152,9 +152,9 @@
 
   {
     "id": "lamp-1",
-    "name": "Modern Floor Lamp",
+  "name": "22-587",
     "price": 18.0,
-    "code": "20PCS/CTN",
+    "code": "Pack: 20PCS/CTN",
     "sizes": "LAMP 39X19 H...",
     "description": "Contemporary floor lamp with adjustable brightness. Perfect for reading corners.",
     "images": [
@@ -167,7 +167,7 @@
   },
   {
     "id": "lamp-2",
-    "name": "Vintage Table Clock",
+"name": "22-587",
     "price": 15.0,
     "code": "Size: 2 STYLES",
     "sizes": "",
@@ -183,7 +183,7 @@
   },
   {
     "id": "lamp-3",
-    "name": "LED Flower Lamp",
+"name": "22-587",
     "price": 20.0,
     "code": "Size: 55.2x18.18",
     "sizes": "",
@@ -199,9 +199,9 @@
   },
   {
     "id": "lamp-4",
-    "name": "Pendant Light Collection",
+ "name": "22-587",
     "price": 12.0,
-    "code": "LAMP-6 STYLE...",
+    "code": "Pack: LAMP-6 STYLE...",
     "sizes": "",
     "description": "Set of pendant lights with 6 different styles to choose from.",
     "images": [
@@ -218,7 +218,7 @@
     "id": "lamp-5",
     "name": "Wall Clock Large",
     "price": 22.0,
-    "code": "4 PCS/CTN Size:",
+    "code": "Pack: 4 PCS/CTN Size:",
     "sizes": "30",
     "description": "Large decorative wall clock with silent movement. Modern design.",
     "images": [
@@ -231,9 +231,9 @@
 
   {
     "id": "islamic-1",
-    "name": "clocks Plate",
+"name": "22-587",
     "price": 16.0,
-    "code": "12 PCS/CTN",
+    "code": "Pack: 12 PCS/CTN",
     "sizes": "13X13",
     "description": "Ornate decorative plate with traditional Islamic patterns. Hand-crafted details.",
     "images": [
@@ -247,7 +247,7 @@
     "id": "islamic-2",
     "name": "Mini Coaster Set",
     "price": 18.0,
-    "code": "36 PCS/CTN",
+    "code": "Pack: 36 PCS/CTN",
     "sizes": "2\"X 2\"X 0.5\"",
     "description": "Set of decorative coasters with Islamic geometric patterns.",
     "images": [
@@ -261,7 +261,7 @@
     "id": "islamic-3",
     "name": "Golden EarringsGolden EarringsGolden EarringsGolden Earrings",
     "price": 14.0,
-    "code": "14 PCS/CTN",
+    "code": "Pack: 14 PCS/CTN",
     "sizes": "5\"(H)X3\"(W)",
     "description": "Elegant golden earrings with traditional design elements.",
     "images": [
@@ -277,7 +277,7 @@
     "id": "islamic-4",
     "name": "Brass Door Knocker",
     "price": 20.0,
-    "code": "12 PCS/CTN Size:",
+    "code": "Pack: 12 PCS/CTN Size:",
     "sizes": "8\"H",
     "description": "Traditional brass door knocker with intricate details. Durable and elegant.",
     "images": [
@@ -293,7 +293,7 @@
     "id": "islamic-4",
     "name": "Brass Door Knocker",
     "price": 20.0,
-    "code": "12 PCS/CTN Size:",
+    "code": "Pack: 12 PCS/CTN Size:",
     "sizes": "8\"H",
     "description": "Traditional brass door knocker with intricate details. Durable and elegant.",
     "images": [
@@ -309,7 +309,7 @@
     "id": "islamic-5",
     "name": "clocks Clock",
     "price": 19.0,
-    "code": "8 PCS/CTN",
+    "code": "Pack: 8 PCS/CTN",
     "sizes": "15X15X15",
     "description": "Beautiful clock with Islamic calligraphy and geometric patterns.",
     "images": [
@@ -325,7 +325,7 @@
     "id": "flower-1",
     "name": "Mini clocks Flowers",
     "price": 7.0,
-    "code": "12 PCS/CTN",
+    "code": "Pack: 12 PCS/CTN",
     "sizes": "Size: IF.081X6D...",
     "description": "Set of colorful mini decorative flowers for festive occasions.Set of colorful mini decorative flowers for festive occasions.",
     "images": [
@@ -342,7 +342,7 @@
     "id": "flower-1",
     "name": "Mini clocks Flowers",
     "price": 7.0,
-    "code": "12 PCS/CTN",
+    "code": "Pack: 12 PCS/CTN",
     "sizes": "Size: IF.081X6D...",
     "description": "Set of colorful mini decorative flowers for festive occasions.",
     "images": [
@@ -359,7 +359,7 @@
     "id": "flower-2",
     "name": "Dried Flower Bouquet",
     "price": 8.0,
-    "code": "36 PCS/CTN",
+    "code": "Pack: 36 PCS/CTN",
     "sizes": "Size: 11 (D) 40 (L...)",
     "description": "Beautiful dried flower arrangement in vibrant colors.",
     "images": [
@@ -375,7 +375,7 @@
     "id": "flower-3",
     "name": "Mini Floral Picks",
     "price": 6.0,
-    "code": "144 PCS/CTN",
+    "code": "Pack: 144 PCS/CTN",
     "sizes": "Size: IF.08FO83cm l...",
     "description": "Small decorative floral picks perfect for arrangements and crafts.",
     "images": [
@@ -391,7 +391,7 @@
     "id": "flower-5",
     "name": "clocks Flower Stickers",
     "price": 9.0,
-    "code": "144 PCS/CTN",
+    "code": "Pack: 144 PCS/CTN",
     "sizes": "Size: 1.9\"IF.08DIV...",
     "description": "Self-adhesive decorative flower stickers for walls and surfaces.",
     "images": [
@@ -405,7 +405,7 @@
     "id": "wall-1",
     "name": "Photo Collage Frame",
     "price": 24.0,
-    "code": "8 PCS/CTN",
+    "code": "Pack: 8 PCS/CTN",
     "sizes": "Size: 57X57X1.25",
     "description": "Multi-photo collage frame perfect for displaying memories.",
     "images": [
@@ -421,7 +421,7 @@
     "id": "wall-2",
     "name": "Circular Wall Art",
     "price": 18.0,
-    "code": "18 PCS/CTN",
+    "code": "Pack: 18 PCS/CTN",
     "sizes": "Size: 19\"X9\"",
     "description": "Modern circular wall art piece with abstract design.",
     "images": [
@@ -436,7 +436,7 @@
     "id": "wall-3",
     "name": "Nature Canvas Print",
     "price": 22.0,
-    "code": "4 PCS/CTN Size: WT-7X7\"",
+    "code": "Pack: 4 PCS/CTN Size: WT-7X7\"",
     "sizes": "",
     "description": "Beautiful nature scene printed on high-quality canvas.",
     "images": [
@@ -450,7 +450,7 @@
     "id": "wall-4",
     "name": "Large Wall Plate",
     "price": 26.0,
-    "code": "Size: 30X30\"",
+    "code": "Pack: Size: 30X30\"",
     "sizes": "",
     "description": "clocks large wall plate with intricate patterns.",
     "images": [
@@ -464,7 +464,7 @@
     "id": "wall-5",
     "name": "Portrait Canvas Art",
     "price": 30.0,
-    "code": "8 PCS/CTN Size: WT-7X7\"",
+    "code": "Pack: 8 PCS/CTN Size: WT-7X7\"",
     "sizes": "",
     "description": "Stunning portrait canvas art for elegant interior design.",
     "images": [
@@ -482,7 +482,7 @@
     "name": "clocks Swan Holder",
     "price": 12.0,
     "oldPrice": 24.0,
-    "code": "6 PCS/CTN Size:",
+    "code": "Pack: 6 PCS/CTN Size:",
     "sizes": "8\"X6.5\"(H) 3.5..",
     "description": "Elegant swan-shaped decorative holder. Limited time offer!",
     "images": [
@@ -499,7 +499,7 @@
     "name": "Colorful Spoon Set",
     "price": 8.0,
     "oldPrice": 16.0,
-    "code": "Size: 10\" (IF-081...)",
+    "code": "Pack: Size: 10\" (IF-081...)",
     "sizes": "",
     "description": "Set of colorful decorative spoons. Perfect for kitchen decor.",
     "images": [
@@ -516,7 +516,7 @@
     "name": "Metal Sculpture",
     "price": 15.0,
     "oldPrice": 30.0,
-    "code": "4 PCS/CTN Size: 24\"X",
+    "code": "Pack: 4 PCS/CTN Size: 24\"X",
     "sizes": "",
     "description": "Modern metal sculpture for contemporary spaces.",
     "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],

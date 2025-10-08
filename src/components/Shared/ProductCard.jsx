@@ -54,18 +54,15 @@ const ProductCard = ({ product, onClick }) => {
       </div>
 
       <div className="p-3">
-        <h3 className="font-medium text-gray-500 mb-2   transition-colors">
+        <h3 className="font-medium text-sm text-gray-500 mb-2   transition-colors">
           {product.category}
         </h3>
-        <h3 className="font-medium text-gray-800 mb-2 line-clamp-1 group-hover:text-orange-500 transition-colors">
+
+        <div className="flex items-center justify-between my-3 gap-2  ">
+        <h3 className="font-medium text-lg text-gray-800   group-hover:text-orange-500 transition-colors truncate">
           {product.name}
         </h3>
-
-        <div className="flex items-center gap-2 mb-2">
           <span className="text-orange-500 font-semibold text-lg">${product.price.toFixed(2)}</span>
-          {product.oldPrice && (
-            <span className="text-gray-400 line-through text-sm">${product.oldPrice.toFixed(2)}</span>
-          )}
         </div>
 
         <p className="text-sm text-gray-600 mb-1 line-clamp-1 font-semibold"><span className="text-orange-500 ">Pack:</span> {product.code}</p>

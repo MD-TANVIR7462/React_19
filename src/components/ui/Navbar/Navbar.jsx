@@ -43,16 +43,17 @@ export default function Navbar() {
     <>
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         {/* Top Bar - Logo, Search, Cart, Login/Profile */}
-        <Usernav/>
-        <TopBar
-          isLoggedIn={isLoggedIn}
-          onLoginToggle={() => setIsLoggedIn(!isLoggedIn)}
-          cartCount={cartCount}
-          onCartClick={() => setShowCartSidebar(true)}
-          onMobileMenuToggle={() => setIsMenuOpen(!isMenuOpen)}
-          isMobileMenuOpen={isMenuOpen}
-        />
-
+        <Usernav />
+        {/* <div className="sticky top-0 z-50 bg-background border-b border-border"> */}
+          <TopBar
+            isLoggedIn={isLoggedIn}
+            onLoginToggle={() => setIsLoggedIn(!isLoggedIn)}
+            cartCount={cartCount}
+            onCartClick={() => setShowCartSidebar(true)}
+            onMobileMenuToggle={() => setIsMenuOpen(!isMenuOpen)}
+            isMobileMenuOpen={isMenuOpen}
+          />
+        {/* </div> */}
         {/* Navigation Bar - Menu Items (Desktop Only) */}
         <NavigationBar />
       </nav>
