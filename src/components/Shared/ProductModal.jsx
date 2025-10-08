@@ -72,7 +72,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                   <motion.button
                     key={index}
                     onClick={() => setCurrentImageIndex(index)}
-                    className={`flex-shrink-0 w-20 h-20 rounded-sm overflow-hidden border-2 transition-all cursor-pointer ${
+                    className={`flex-shrink-0 w-20 h-20 rounded-sm hidden sm:block  border-2 transition-all cursor-pointer ${
                       currentImageIndex === index
                         ? "border-orange-400  border-[2px]"
                         : "border-gray-100 hover:border-gray-300 transition-colors duration-200"

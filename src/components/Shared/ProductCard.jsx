@@ -65,7 +65,7 @@ const ProductCard = ({ product, onClick }) => {
           )}
         </div>
 
-        <p className="text-sm text-gray-600 mb-1 line-clamp-1">{product.code}</p>
+        <p className="text-sm text-gray-600 mb-1 line-clamp-1">sdfsd{product.code}</p>
         {product.sizes && <p className="text-xs text-orange-500 line-clamp-1">{product.sizes}</p>}
       </div>
     </motion.div>

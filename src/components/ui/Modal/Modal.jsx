@@ -27,8 +27,8 @@ export const Modal = ({ isOpen, onClose, children, title, width ,color="bg-white
             width ? width : "max-w-2xl"
           } w-full max-h-[90vh] overflow-y-auto`}
         >
-          <div className={`sticky top-0 z-50 bg-white  lg:bg-gray-200/50 p-4 border-b  flex justify-between items-center`}>
-            <h2 className="text-2xl font-semibold text-black">{title}</h2>
+          <div className={`sticky top-0 z-50 bg-white  lg:bg-gray-200/50 p-2 sm:p-4 border-b  flex justify-between items-center`}>
+            <h2 className= "text-xl sm:text-2xl font-semibold text-black">{title}</h2>
             <button onClick={onClose} className="text-gray-400 hover:text-black transition-colors cursor-pointer">
               <X className="w-5 h-5" />
             </button>
