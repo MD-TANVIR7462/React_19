@@ -1,5 +1,5 @@
 import { Command, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
-import { getAllProductsFromDB } from "@/lib/customeFunc"
+import { getAllProductsFromDB } from "@/utils/customeFunc"
 import { useState, useEffect } from "react"
 
 const SearchBox = () => {

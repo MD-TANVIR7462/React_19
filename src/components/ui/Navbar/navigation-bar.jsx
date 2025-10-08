@@ -12,7 +12,7 @@ const navigationItems = [
 export default function NavigationBar() {
   return (
     <div className="hidden lg:block bg-muted/30 border-t border-border">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 ">
         <div className="flex items-center space-x-8 h-12">
           {navigationItems.map((item) => (
             <a

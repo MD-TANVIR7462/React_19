@@ -2,6 +2,7 @@ export const fetchItems = async (endpoint) => {
   try {
     const result = await fetch(`${endpoint}`);
     const res = result.json();
+    console.log(res);
     return res;
   // eslint-disable-next-line no-unused-vars
   } catch (err) {
