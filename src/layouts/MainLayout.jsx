@@ -8,12 +8,11 @@ const MainLayout = () => {
   return (
     <div className="bg-[#f3f5f6]">
       <Navbar />
+      <ScrollToTop />
       <div className="max-w-[1400px] mx-auto px-2 lg:px-4 ">
         <AutoScroll />
-
         <Outlet />
       </div>
-      <ScrollToTop />
     </div>
   );
 };
