@@ -1,10 +1,8 @@
-import ProductModal from "@/components/Shared/ProductModal";
-import { fetchItems } from "@/utils/customeFunc";
 import { useEffect, useState } from "react";
 import Productindex from "./ProductsIndex";
+import ProductModal from "@/components/Shared/Product/ProductModal/ProductModal";
 
-const Product = () => {
-  const [productData, setProductData] = useState(null);
+const Product = ({ data }) => {
   const [category, setProductCategory] = useState({
     gift: [],
     flowers: [],
@@ -14,34 +12,18 @@ const Product = () => {
   });
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   //initial data load
   useEffect(() => {
-    const loadProducts = async () => {
-      try {
-        setIsLoading(true);
-        const data = await fetchItems("/product.json");
-        const gift = data?.filter((item) => item.category === "gift");
-        const flowers = data?.filter((item) => item.category === "flowers");
-        const islamic = data?.filter((item) => item.category === "islamic");
-        const wall = data?.filter((item) => item.category === "wall");
-        const everyday = data?.filter((item) => item.category === "everyday");
-        setProductCategory({ gift, flowers, islamic, wall, everyday });
-        setProductData(data);
-      } catch (err) {
-        setError(err ? err.message : "Failed to load products");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadProducts();
-  }, []);
+    const gift = data?.filter((item) => item.category === "gift");
+    const flowers = data?.filter((item) => item.category === "flowers");
+    const islamic = data?.filter((item) => item.category === "islamic");
+    const wall = data?.filter((item) => item.category === "wall");
+    const everyday = data?.filter((item) => item.category === "everyday");
+    setProductCategory({ gift, flowers, islamic, wall, everyday });
+  }, [data]);
 
   //actions
-
   const handleProductClick = (product) => {
     setSelectedProduct(product);
     setIsModalOpen(true);
@@ -51,26 +33,6 @@ const Product = () => {
     setIsModalOpen(false);
     setTimeout(() => setSelectedProduct(null), 300);
   };
-
-//  if (isLoading) {
-//     return <Loader />;
-//   }
- 
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-red-500 mb-4">{error}</p>
-          <button
-            onClick={() => window.location.reload()}
-            className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors"
-          >
-            Retry
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div>

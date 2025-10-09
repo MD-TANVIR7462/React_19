@@ -10,7 +10,7 @@ export const fetchItems = async (endpoint) => {
   }
 };
 
-export const usePromise = async({endpoint})=>{
+export const usePromise = async(endpoint)=>{
 const result = await fetch(`${endpoint}`);
 const res = result.json();
 return res;

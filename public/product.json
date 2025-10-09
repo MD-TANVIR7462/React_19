@@ -1,5 +1,81 @@
 [
   {
+    "id": "gift-13",
+    "name": "22-587",
+    "price": 8.0,
+    "code": "Pack: 4 PCS/CTN Size:",
+    "sizes": "13x13x18",
+    "description": "Elegant decorative glass vase perfect for home decor. Features intricate designs and premium quality materials.",
+    "images": [
+      "https://demodmirtextrading.siscotech.com/admin/views/product/documents/13-311.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/13-312.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/13-266.png"
+    ],
+    "stock": 0,
+    "category": "everyday"
+  },
+  {
+    "id": "gift-23",
+    "name": "22-587",
+    "price": 10.0,
+    "code": "Pack: 3D RESIN",
+    "sizes": "Set of 3",
+    "description": "Beautiful 3D resin coasters that add a modern touch to any table setting.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-067.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-065.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-066.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-068.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-069.png"
+    ],
+    "stock": 120,
+    "category": "gift"
+  },
+  {
+    "id": "gift-33",
+    "name": "22-587",
+    "price": 12.0,
+    "code": "Pack: 4 PCS/CTN",
+    "sizes": "20x15",
+    "description": "Multi-purpose serving tray with elegant finish, perfect for entertaining guests.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/35-187.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/35-186.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/35-184.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/35-185.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/35-188.png"
+    ],
+    "stock": 78,
+    "category": "gift"
+  },
+  {
+    "id": "gift-43",
+    "name": "22-587",
+    "price": 15.0,
+    "code": "Pack: RESIN Size:",
+    "sizes": "18x12",
+    "description": "Stylish resin ring holder for organizing your jewelry collection.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/23-089.png"],
+    "stock": 95,
+    "category": "everyday"
+  },
+  {
+    "id": "gift-53",
+    "name": "22-587",
+    "price": 9.0,
+    "code": "Pack: 6 PCS/CTN",
+    "sizes": "10x10x15",
+    "description": "Natural bamboo vase with modern design, perfect for any room.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/87-845.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/87-843.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/87-844.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/87-842.png"
+    ],
+    "stock": 60,
+    "category": "gift"
+  },
+  {
     "id": "gift-1",
     "name": "22-587",
     "price": 8.0,
@@ -121,6 +197,98 @@
     ],
     "stock": 85,
     "category": "wall"
+  },
+  {
+    "id": "everyday-4",
+    "name": "clocks Window Film",
+    "price": 10.0,
+    "code": "Pack: 12 PCS/CTN",
+    "sizes": "39\"X 70\" MA...",
+    "description": "Privacy window film with decorative patterns. Easy to install.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png"],
+    "stock": 110,
+    "category": "flowers"
+  },
+  {
+    "id": "everyday-5",
+    "name": "Aromatherapy Candle Set",
+    "price": 5.0,
+    "code": "Pack: 72 PCS/CTN",
+    "sizes": "(68 ML)",
+    "description": "Scented candles for relaxation and ambiance. Long-lasting fragrance.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-215.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-216.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-217.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-230.png"
+    ],
+    "stock": 300,
+    "category": "islamic"
+  },
+
+  {
+    "id": "lamp-1",
+  "name": "22-587",
+    "price": 18.0,
+    "code": "Pack: 20PCS/CTN",
+    "sizes": "LAMP 39X19 H...",
+    "description": "Contemporary floor lamp with adjustable brightness. Perfect for reading corners.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-221.png",
+     "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
+        "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png"
+    ],
+    "stock": 65,
+    "category": "wall"
+  },
+  {
+    "id": "lamp-2",
+"name": "22-587",
+    "price": 15.0,
+    "code": "Size: 2 STYLES",
+    "sizes": "",
+    "description": "Classic table clock with vintage design. Available in two styles.",
+    "images": [
+   
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png"
+    ],
+    "stock": 90,
+    "category": "flowers"
+  },
+  {
+    "id": "lamp-3",
+"name": "22-587",
+    "price": 20.0,
+    "code": "Size: 55.2x18.18",
+    "sizes": "",
+    "description": "clocks LED lamp with flower design. Energy efficient and beautiful.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png"
+    ],
+    "stock": 55,
+    "category": "clocks wall"
+  },
+  {
+    "id": "lamp-4",
+ "name": "22-587",
+    "price": 12.0,
+    "code": "Pack: LAMP-6 STYLE...",
+    "sizes": "",
+    "description": "Set of pendant lights with 6 different styles to choose from.",
+    "images": [
+  
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
+    ],
+    "stock": 75,
+    "category": "flowers"
   },
   {
     "id": "everyday-4",

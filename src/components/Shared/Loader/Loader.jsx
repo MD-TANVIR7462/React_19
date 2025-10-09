@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+
 const Loader = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#f3f5f6]">
@@ -21,16 +22,6 @@ const Loader = () => {
             </motion.div>
           </div>
         </div>
-
-        {/* Loading Text */}
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="text-gray-600 text-lg font-semibold animate-pulse"
-        >
-          Loading...
-        </motion.p>
       </motion.div>
     </div>
   );

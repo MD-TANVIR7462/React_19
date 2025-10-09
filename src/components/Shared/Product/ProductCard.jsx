@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ShoppingCart } from "lucide-react";
+import { memo } from "react";
 
 const ProductCard = ({ product, onClick }) => {
   return (
@@ -9,14 +10,9 @@ const ProductCard = ({ product, onClick }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-    
     >
       <div className="relative aspect-square  overflow-hidden">
-        <motion.img
-          src={product.images[0]}
-          alt={product.name}
-          className="w-full h-full "
-        />
+        <motion.img src={product.images[0]} alt={product.name} className="w-full h-full " loading="lazy" />
 
         {product.discount && (
           <motion.div
@@ -30,7 +26,7 @@ const ProductCard = ({ product, onClick }) => {
         )}
 
         <motion.button
-          className="absolute top-2 right-2 bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full shadow-lg  cursor-pointer  transition-opacity"
+          className="absolute top-2 right-2 bg-orange-500/80 hover:bg-orange-600/80 text-white p-2 rounded-full shadow-lg  cursor-pointer  transition-opacity"
           onClick={(e) => {
             e.stopPropagation();
           }}
@@ -54,21 +50,25 @@ const ProductCard = ({ product, onClick }) => {
       </div>
 
       <div className="p-3">
-        <h3 className="font-medium text-sm text-gray-500 mb-2   transition-colors">
-          {product.category}
-        </h3>
+        <h3 className="font-medium text-sm text-gray-500 mb-2   transition-colors">{product.category}</h3>
 
         <div className="flex items-center justify-between my-3 gap-2  ">
-        <h3 className="font-medium text-lg text-gray-800   group-hover:text-orange-500 transition-colors truncate">
-          {product.name}
-        </h3>
-          <span className="text-orange-500 font-semibold text-lg">${product.price.toFixed(2)}</span>
+          <h3 className="font-medium text-lg text-gray-800   group-hover:text-orange-500/80/80 transition-colors truncate">
+            {product.name}
+          </h3>
+          <span className="text-orange-500/80 font-semibold text-lg">${product.price.toFixed(2)}</span>
         </div>
 
-        <p className="text-sm text-gray-600 mb-1 line-clamp-1 font-semibold"><span className="text-orange-500 ">Pack:</span> {product.code}</p>
-        {product.sizes && <p className="text-xs  line-clamp-1 font-semibold text-gray-600"><span className="text-orange-500 ">Dim:</span>  {product.sizes}</p>}
+        <p className="text-sm text-gray-600 mb-1 line-clamp-1 font-semibold">
+          <span className="text-orange-500/80 ">Pack:</span> {product.code}
+        </p>
+        {product.sizes && (
+          <p className="text-xs  line-clamp-1 font-semibold text-gray-600">
+            <span className="text-orange-500/80 ">Dim:</span> {product.sizes}
+          </p>
+        )}
       </div>
     </motion.div>
   );
 };
-export default ProductCard;
+export default memo(ProductCard);

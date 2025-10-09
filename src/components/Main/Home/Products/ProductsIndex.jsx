@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import ProductCard from "@/components/Shared/ProductCard";
+import ProductCard from "@/components/Shared/Product/ProductCard";
 
 const Productindex = ({ title, products, onProductClick }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +19,7 @@ const Productindex = ({ title, products, onProductClick }) => {
         </motion.h2>
 
         <motion.button
-          className="flex items-center gap-2 hover:text-orange-500  font-medium transition-colors group"
+          className="flex items-center gap-2 hover:text-orange-500/80  font-medium transition-colors group"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
