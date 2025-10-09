@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
-import { ShoppingCart } from "lucide-react";
-import { memo } from "react";
+import { LoaderIcon, ShoppingCart } from "lucide-react";
+import { memo, useState } from "react";
+import BrokenSvg from "../Svg/BrokenSvg";
 
 const ProductCard = ({ product, onClick }) => {
+  const [imageStatus, setImageStatus] = useState({ loading: true, error: false });
+
   return (
     <motion.div
       className="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-sm transition-shadow cursor-pointer group "
@@ -12,7 +15,26 @@ const ProductCard = ({ product, onClick }) => {
       transition={{ duration: 0.3 }}
     >
       <div className="relative aspect-square  overflow-hidden">
-        <motion.img src={product.images[0]} alt={product.name} className="w-full h-full " loading="lazy" />
+        {imageStatus.loading && !imageStatus.error && (
+          <div className=" h-full flex justify-center items-center">
+            <LoaderIcon className=" h-6 w-6 animate-spin" />
+          </div>
+        )}
+        {imageStatus.error && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-white text-red-500 ">
+            <BrokenSvg />
+            <div className="text-red-500 animate-pulse font-semibold ">Broken</div>
+          </div>
+        )}
+
+        <motion.img
+          src={product.images[0]}
+          alt={product.name}
+          className="w-full h-full "
+          loading="lazy"
+          onLoad={() => setImageStatus({ loading: false, error: false })}
+          onError={() => setImageStatus({ loading: false, error: true })}
+        />
 
         {product.discount && (
           <motion.div

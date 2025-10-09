@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import BrokenSvg from "../../Svg/BrokenSvg";
 
 const ProductImage = ({ src, alt, className, callForm = "swiper" }) => {
   const [loading, setLoading] = useState(true);
@@ -11,9 +12,13 @@ const ProductImage = ({ src, alt, className, callForm = "swiper" }) => {
 
       {/* Error placeholder */}
       {error && (
-        <div className={` flex items-center justify-center bg-red-100 rounded-sm ${callForm === "thumbnail" ? "inset-0 absolute" : "h-[400px]"}`}>
+        <div
+          className={` flex items-center justify-center bg-red-100 rounded-sm ${
+            callForm === "thumbnail" ? "inset-0 absolute" : "h-[400px]"
+          }`}
+        >
           <span className="text-red-500 font-semibold text-sm">
-            {callForm === "thumbnail" ? "Broken" : "Image not available"}
+            {callForm === "thumbnail" ? "Broken" : <BrokenSvg />}
           </span>
         </div>
       )}
