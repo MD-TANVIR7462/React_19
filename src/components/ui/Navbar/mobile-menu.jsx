@@ -1,14 +1,17 @@
 import { Home, User, Settings, LogOut, ShoppingCart, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const navigationItems = [
   { name: "Home", href: "/", icon: Home },
-  { name: "Shop", href: "/shop", icon: ShoppingCart },
-  { name: "About", href: "/about", icon: Home },
-  { name: "Gift", href: "/gift", icon: Home },
+  { name: "Gift", href: "/gift", icon: ShoppingCart },
+  { name: "Everyday", href: "/everyday", icon: Home },
+  { name: "Clock Lamps", href: "/clocks", icon: Home },
   { name: "Islamic", href: "/islamic", icon: Home },
   { name: "Contact", href: "/contact", icon: Home },
 ];
+
+
 
 export default function MobileMenu({ isOpen, onClose, isLoggedIn, onLoginToggle }) {
   return (
@@ -44,14 +47,15 @@ export default function MobileMenu({ isOpen, onClose, isLoggedIn, onLoginToggle 
             <div className="space-y-2 mb-6">
               <h3 className="text-sm font-medium text-muted-foreground mb-3">Navigation</h3>
               {navigationItems.map((item) => (
-                <Button
+                <Link
+                  to={item.href}
                   key={item.name}
                   variant="ghost"
                   className="justify-start w-full h-12 text-left hover:bg-muted/50 transition-colors"
                 >
                   <item.icon className="w-4 h-4 mr-3" />
                   {item.name}
-                </Button>
+                </Link>
               ))}
             </div>
 
