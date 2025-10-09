@@ -29,6 +29,7 @@ const ProductCard = ({ product, onClick }) => {
           alt={product.name}
           className="w-full h-full "
           loading="lazy"
+          decoding="async"
           onLoad={() => setImageStatus({ loading: false, error: false })}
           onError={() => setImageStatus({ loading: false, error: true })}
         />

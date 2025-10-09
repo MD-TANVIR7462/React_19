@@ -132,6 +132,7 @@ const HeroSlider = () => {
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                   }}
+                  loading="lazy"
                   key={banner.id}
                   onClick={() => handleBannerClick(banner.type)}
                   className={` rounded-md cursor-pointer  transition-all duration-600   `}

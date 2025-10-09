@@ -39,6 +39,7 @@ const ProductImage = ({ src, alt, className, callForm = "swiper" }) => {
           src={src}
           alt={alt}
           loading="lazy"
+          decoding="async"
           className={`w-full h-full mx-auto max-h-[400px] object-contain ${
             loading ? "opacity-0" : "opacity-100"
           } transition-opacity duration-300`}
