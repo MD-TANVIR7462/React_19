@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import ProductCard from "@/components/Shared/Product/ProductCard";
+import ProductCard from "@/components/Shared/Product/ProductCard/ProductCard";
 
 const Productindex = ({ title, products, onProductClick }) => {
   const [isHovered, setIsHovered] = useState(false);

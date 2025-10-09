@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import BrokenSvg from "../../Svg/BrokenSvg";
+import { LoaderIcon } from "lucide-react";
 
 const ProductImage = ({ src, alt, className, callForm = "swiper" }) => {
   const [loading, setLoading] = useState(true);
@@ -8,12 +9,23 @@ const ProductImage = ({ src, alt, className, callForm = "swiper" }) => {
 
   return (
     <div className={`relative ${className}`}>
-      {loading && !error && <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-sm" />}
+      {loading && !error && (
+        <div
+          className={` bg-gray-200 animate-pulse rounded-sm ${
+            callForm === "thumbnail" ? "inset-0 absolute" : "h-[400px]"
+          }`}
+        >
+          {" "}
+          <div className=" h-full flex justify-center items-center">
+            <LoaderIcon className=" h-5 w-5 animate-spin" />
+          </div>
+        </div>
+      )}
 
       {/* Error placeholder */}
       {error && (
         <div
-          className={` flex items-center justify-center bg-red-100 rounded-sm ${
+          className={` flex items-center justify-center bg-red-100/60  rounded-sm ${
             callForm === "thumbnail" ? "inset-0 absolute" : "h-[400px]"
           }`}
         >

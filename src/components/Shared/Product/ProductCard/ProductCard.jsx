@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { LoaderIcon, ShoppingCart } from "lucide-react";
 import { memo, useState } from "react";
-import BrokenSvg from "../Svg/BrokenSvg";
+import BrokenSvg from "../../Svg/BrokenSvg";
 
 const ProductCard = ({ product, onClick }) => {
   const [imageStatus, setImageStatus] = useState({ loading: true, error: false });
@@ -48,7 +48,7 @@ const ProductCard = ({ product, onClick }) => {
         )}
 
         <motion.button
-          className="absolute top-2 right-2 bg-orange-500/80 hover:bg-orange-600/80 text-white p-2 rounded-full shadow-lg  cursor-pointer  transition-opacity"
+          className="absolute top-2 right-2 bg-orange-500 hover:bg-orange-600/90 text-white p-2 rounded-full shadow-lg  cursor-pointer  transition-opacity"
           onClick={(e) => {
             e.stopPropagation();
           }}
@@ -75,7 +75,7 @@ const ProductCard = ({ product, onClick }) => {
         <h3 className="font-medium text-sm text-gray-500 mb-2   transition-colors">{product.category}</h3>
 
         <div className="flex items-center justify-between my-3 gap-2  ">
-          <h3 className="font-medium text-lg text-gray-800   group-hover:text-orange-500/80/80 transition-colors truncate">
+          <h3 className="font-medium text-lg text-gray-800   group-hover:text-orange-500/80 transition-colors truncate">
             {product.name}
           </h3>
           <span className="text-orange-500/80 font-semibold text-lg">${product.price.toFixed(2)}</span>

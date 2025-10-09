@@ -1,4 +1,4 @@
-import ProductCard from "@/components/Shared/Product/ProductCard";
+import ProductCard from "@/components/Shared/Product/ProductCard/ProductCard";
 import { motion } from "framer-motion";
 import { use } from "react";
 
