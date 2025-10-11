@@ -11,8 +11,6 @@ const navigationItems = [
   { name: "Contact", href: "/contact", icon: Home },
 ];
 
-
-
 export default function MobileMenu({ isOpen, onClose, isLoggedIn, onLoginToggle }) {
   return (
     <>

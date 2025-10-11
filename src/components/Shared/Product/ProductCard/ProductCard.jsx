@@ -8,7 +8,7 @@ const ProductCard = ({ product, onClick }) => {
 
   return (
     <motion.div
-      className="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-sm transition-shadow cursor-pointer group "
+      className="bg-white rounded-sm overflow-hidden shadow-sm  transition-shadow cursor-grab group h-full"
       onClick={() => onClick(product)}
     >
       <div className="relative aspect-square  overflow-hidden">
@@ -45,7 +45,7 @@ const ProductCard = ({ product, onClick }) => {
         )}
 
         <motion.button
-          className="absolute top-2 right-2 bg-orange-500 hover:bg-orange-600/90 text-white p-2 rounded-full shadow-lg  cursor-pointer  transition-opacity"
+          className="absolute top-2 right-2 bg-orange-500 hover:bg-orange-600/90 text-white p-2 rounded-full shadow-lg  cursor-pointer  transition-opacity "
           onClick={(e) => {
             e.stopPropagation();
           }}

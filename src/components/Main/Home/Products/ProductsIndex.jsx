@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import ProductCard from "@/components/Shared/Product/ProductCard/ProductCard";
+import ProductCarousel from "@/components/ui/Carousel/ProductCarousel";
 
 const Productindex = ({ title, products, onProductClick }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -32,22 +33,24 @@ const Productindex = ({ title, products, onProductClick }) => {
 
       <div className="relative">
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.1,
-              },
-            },
-          }}
+          // className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4"
+          // initial="hidden"
+          // animate="visible"
+          // variants={{
+          //   hidden: { opacity: 0 },
+          //   visible: {
+          //     opacity: 1,
+          //     transition: {
+          //       staggerChildren: 0.1,
+          //     },
+          //   },
+          // }}
         >
-          {products?.map((product) => (
+          {/* {products?.map((product) => (
             <ProductCard key={product.id} product={product} onClick={onProductClick} />
-          ))}
+          ))} */}
+
+          <ProductCarousel products={products} onClick={onProductClick} />
         </motion.div>
       </div>
     </motion.section>
