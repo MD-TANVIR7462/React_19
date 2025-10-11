@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   ChevronLeft,
   ChevronRight,
@@ -69,7 +69,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
     //   onAddToCart({ ...product, quantity });
     // }
     onClose();
-    console.log(product,quantity);
+    console.log(product, quantity);
   };
 
   return (
@@ -172,7 +172,9 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                 >
                   −
                 </button>
-                <span className="px-2 md:px-3 py-1 md:py-2 text-sm font-medium text-gray-800 min-w-[2rem] text-center">{quantity}</span>
+                <span className="px-2 md:px-3 py-1 md:py-2 text-sm font-medium text-gray-800 min-w-[2rem] text-center">
+                  {quantity}
+                </span>
                 <button
                   onClick={increaseQuantity}
                   className="px-2 md:px-3 py-1 md:py-2 text-gray-600 hover:bg-gray-100 transition-colors duration-150 rounded-r-sm cursor-pointer"
@@ -185,7 +187,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                 disabled={product.stock === 0}
                 onClick={(e) => {
                   e.stopPropagation();
-                  handleAddToCart(product)
+                  handleAddToCart(product);
                 }}
               >
                 <ShoppingCart className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
@@ -207,7 +209,19 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                 <ChevronDown className="w-5 h-5 text-gray-600" />
               )}
             </button>
-            {isDescriptionOpen && <p className="text-gray-400 text-sm mt-1">{product.description}</p>}
+
+            <AnimatePresence>
+              {isDescriptionOpen && (
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="text-gray-600 text-sm leading-relaxed"
+                >
+                  {product.description}
+                </motion.p>
+              )}
+            </AnimatePresence>
           </div>
 
           {/* Product Details Dropdown */}
@@ -224,29 +238,31 @@ const ProductModal = ({ product, isOpen, onClose }) => {
               )}
             </button>
 
-            {isDetailsOpen && (
-              <div className="mt-1 space-y-3">
-                <div className="flex gap-8 items-center">
-                  <div className="flex items-start gap-3">
-                    <Package className="w-5 h-5 text-orange-500/80 mt-0.5" />
-                    <div>
-                      <p className="font-medium text-gray-200">Product Code</p>
-                      <p className="text-gray-400 text-sm">{product.code}</p>
-                    </div>
-                  </div>
-
-                  {product.sizes && (
+            <AnimatePresence>
+              {isDetailsOpen && (
+                <div className="mt-1 space-y-3">
+                  <div className="flex gap-8 items-center">
                     <div className="flex items-start gap-3">
-                      <Ruler className="w-5 h-5 text-orange-500/80 mt-0.5" />
+                      <Package className="w-5 h-5 text-orange-500/80 mt-0.5" />
                       <div>
-                        <p className="font-medium text-gray-200">Dimensions</p>
-                        <p className="text-gray-400 text-sm">{product.sizes}</p>
+                        <p className="font-medium text-gray-200">Product Code</p>
+                        <p className="text-gray-400 text-sm">{product.code}</p>
                       </div>
                     </div>
-                  )}
+
+                    {product.sizes && (
+                      <div className="flex items-start gap-3">
+                        <Ruler className="w-5 h-5 text-orange-500/80 mt-0.5" />
+                        <div>
+                          <p className="font-medium text-gray-200">Dimensions</p>
+                          <p className="text-gray-400 text-sm">{product.sizes}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>

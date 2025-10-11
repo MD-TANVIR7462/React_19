@@ -154,14 +154,14 @@
 
   {
     "id": "everyday-1",
-   "name": "22-587",
+    "name": "22-587",
     "price": 6.0,
     "code": "Pack: 4 PCS/CTN",
     "sizes": "40x60",
     "description": "Soft and absorbent bath mat for everyday use. Machine washable.",
     "images": [
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
-        "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-221.png"
     ],
     "stock": 200,
@@ -169,7 +169,7 @@
   },
   {
     "id": "everyday-2",
-   "name": "22-587",
+    "name": "22-587",
     "price": 8.0,
     "code": "Pack: 20 PCS/CTN",
     "sizes": "11\"x7\"(0.3\")",
@@ -185,14 +185,14 @@
   },
   {
     "id": "everyday-3",
-"name": "22-587",
+    "name": "22-587",
     "price": 12.0,
     "code": "Pack: 4 PCS/CTN Size:",
     "sizes": "90\"(H)\"X 33\"",
     "description": "Natural bamboo curtain for doors and windows. Adds privacy and style.",
     "images": [
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png",
-     "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-221.png"
     ],
     "stock": 85,
@@ -228,28 +228,27 @@
 
   {
     "id": "lamp-1",
-  "name": "22-587",
+    "name": "22-587",
     "price": 18.0,
     "code": "Pack: 20PCS/CTN",
     "sizes": "LAMP 39X19 H...",
     "description": "Contemporary floor lamp with adjustable brightness. Perfect for reading corners.",
     "images": [
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-221.png",
-     "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
-        "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png"
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png"
     ],
     "stock": 65,
     "category": "wall"
   },
   {
     "id": "lamp-2",
-"name": "22-587",
+    "name": "22-587",
     "price": 15.0,
     "code": "Size: 2 STYLES",
     "sizes": "",
     "description": "Classic table clock with vintage design. Available in two styles.",
     "images": [
-   
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png"
@@ -259,7 +258,7 @@
   },
   {
     "id": "lamp-3",
-"name": "22-587",
+    "name": "22-587",
     "price": 20.0,
     "code": "Size: 55.2x18.18",
     "sizes": "",
@@ -275,13 +274,12 @@
   },
   {
     "id": "lamp-4",
- "name": "22-587",
+    "name": "22-587",
     "price": 12.0,
     "code": "Pack: LAMP-6 STYLE...",
     "sizes": "",
     "description": "Set of pendant lights with 6 different styles to choose from.",
     "images": [
-  
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
@@ -320,28 +318,27 @@
 
   {
     "id": "lamp-1",
-  "name": "22-587",
+    "name": "22-587",
     "price": 18.0,
     "code": "Pack: 20PCS/CTN",
     "sizes": "LAMP 39X19 H...",
     "description": "Contemporary floor lamp with adjustable brightness. Perfect for reading corners.",
     "images": [
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-221.png",
-     "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
-        "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png"
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-217.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-196.png"
     ],
     "stock": 65,
     "category": "wall"
   },
   {
     "id": "lamp-2",
-"name": "22-587",
+    "name": "22-587",
     "price": 15.0,
     "code": "Size: 2 STYLES",
     "sizes": "",
     "description": "Classic table clock with vintage design. Available in two styles.",
     "images": [
-   
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png"
@@ -351,7 +348,7 @@
   },
   {
     "id": "lamp-3",
-"name": "22-587",
+    "name": "22-587",
     "price": 20.0,
     "code": "Size: 55.2x18.18",
     "sizes": "",
@@ -363,17 +360,16 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png"
     ],
     "stock": 55,
-    "category": "clocks wall"
+    "category": "clocks"
   },
   {
     "id": "lamp-4",
- "name": "22-587",
+    "name": "22-587",
     "price": 12.0,
     "code": "Pack: LAMP-6 STYLE...",
     "sizes": "",
     "description": "Set of pendant lights with 6 different styles to choose from.",
     "images": [
-  
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
@@ -389,17 +385,14 @@
     "code": "Pack: 4 PCS/CTN Size:",
     "sizes": "30",
     "description": "Large decorative wall clock with silent movement. Modern design.",
-    "images": [
-      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-014.png"
-     
-    ],
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/15-014.png"],
     "stock": 40,
     "category": "wall"
   },
 
   {
     "id": "islamic-1",
-"name": "22-587",
+    "name": "22-587",
     "price": 16.0,
     "code": "Pack: 12 PCS/CTN",
     "sizes": "13X13",
@@ -497,11 +490,9 @@
     "sizes": "Size: IF.081X6D...",
     "description": "Set of colorful mini decorative flowers for festive occasions.Set of colorful mini decorative flowers for festive occasions.",
     "images": [
-
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png"
-
     ],
     "stock": 250,
     "category": "flowers"
@@ -562,10 +553,7 @@
     "code": "Pack: 144 PCS/CTN",
     "sizes": "Size: 1.9\"IF.08DIV...",
     "description": "Self-adhesive decorative flower stickers for walls and surfaces.",
-    "images": [
-   
-      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-015.png"
-    ],
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/15-015.png"],
     "stock": 350,
     "category": "wall"
   },
@@ -577,13 +565,14 @@
     "sizes": "Size: 57X57X1.25",
     "description": "Multi-photo collage frame perfect for displaying memories.",
     "images": [
+      "https://testmirtextrading.siscotech.com/admin/views/product/documents/22-093_09172025063438.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png",
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png"
     ],
     "stock": 45,
-    "category": "Frames"
+    "category": "clocks"
   },
   {
     "id": "wall-2",
@@ -666,10 +655,7 @@
     "code": "Pack: Size: 30X30\"",
     "sizes": "",
     "description": "clocks large wall plate with intricate patterns.",
-    "images": [
-      "https://demomirtextrading.siscotech.com/admin/views/product/documents/15-042.png"
-    
-    ],
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/15-042.png"],
     "stock": 35,
     "category": "wall"
   },
@@ -800,8 +786,7 @@
     "stock": 20,
     "category": "clocks",
     "discount": 50
-  }
-  ,
+  },
   {
     "id": "wall-522",
     "name": "Portrait Canvas Art",

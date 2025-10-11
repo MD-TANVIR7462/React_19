@@ -4,7 +4,7 @@ import { use, useState } from "react";
 
 const Gift = ({ giftPromise }) => {
   const giftData = use(giftPromise);
-  console.log(giftData,giftPromise);
+  console.log(giftData, giftPromise);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
