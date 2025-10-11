@@ -3,13 +3,10 @@ import { useLocation } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 
 const AutoScroll = () => {
-  const { pathename } = useLocation();
+  const { pathname } = useLocation();
   useEffect(() => {
-    animateScroll.scrollToTop({
-      duration: 300,
-      smooth: "easeInOutQuad",
-    });
-  }, [pathename]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   return null;
 };
 export default AutoScroll;
