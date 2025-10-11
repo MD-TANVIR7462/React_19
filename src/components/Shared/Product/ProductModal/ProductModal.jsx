@@ -181,7 +181,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                 </button>
               </div>
               <Button
-                className=" bg-orange-500 hover:bg-orange-600/90 rounded-sm text-white md:py-6 py-5  md:text-lg"
+                className=" bg-orange-500 hover:bg-orange-600/90 rounded-sm text-white md:py-6 py-5  md:text-lg cursor-pointer"
                 disabled={product.stock === 0}
                 onClick={(e) => {
                   e.stopPropagation();
