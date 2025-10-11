@@ -8,7 +8,7 @@ const ProductCard = ({ product, onClick }) => {
 
   return (
     <motion.div
-      className="bg-white rounded-sm overflow-hidden shadow-sm  transition-shadow cursor-grab group h-full"
+      className="bg-white rounded-sm overflow-hidden shadow-sm  transition-shadow cursor-pointer group h-full"
       onClick={() => onClick(product)}
     >
       <div className="relative aspect-square  overflow-hidden">

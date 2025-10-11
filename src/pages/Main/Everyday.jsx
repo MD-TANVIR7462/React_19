@@ -20,7 +20,7 @@ const Everyday = ({ promise }) => {
   const everyday = everydayData?.filter((item) => item.category === "everyday");
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4 mt-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4 mt-8  pb-4">
       {everyday?.map((product) => (
         <ProductCard key={product.id} product={product} onClick={handleProductClick} />
       ))}

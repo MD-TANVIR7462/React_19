@@ -2,9 +2,8 @@ import ProductCard from "@/components/Shared/Product/ProductCard/ProductCard";
 import ProductModal from "@/components/Shared/Product/ProductModal/ProductModal";
 import { use, useState } from "react";
 
-const Gift = ({ giftPromise }) => {
-  const giftData = use(giftPromise);
-  console.log(giftData,giftPromise);
+const Clocks = ({ promise }) => {
+  const result = use(promise);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -18,10 +17,11 @@ const Gift = ({ giftPromise }) => {
     setTimeout(() => setSelectedProduct(null), 300);
   };
 
-  const gift = giftData?.filter((item) => item.category === "gift");
+  const data = result?.filter((item) => item.category === "clocks");
+
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4 mt-8  pb-4">
-      {gift?.map((product) => (
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4 pb-4 mt-8 ">
+      {data?.map((product) => (
         <ProductCard key={product.id} product={product} onClick={handleProductClick} />
       ))}
       {selectedProduct && <ProductModal product={selectedProduct} isOpen={isModalOpen} onClose={handleCloseModal} />}
@@ -29,4 +29,4 @@ const Gift = ({ giftPromise }) => {
   );
 };
 
-export default Gift;
+export default Clocks;
