@@ -1,4 +1,5 @@
-import { use, useState } from "react";
+
+import { use, useEffect, useState } from "react";
 import { Grid3x3, BookOpen } from "lucide-react";
 import ProductCard from "@/components/Shared/Product/ProductCard/ProductCard";
 import ProductModal from "@/components/Shared/Product/ProductModal/ProductModal";
@@ -28,13 +29,17 @@ const Clocks = ({ promise }) => {
 
   const data = result?.filter((item) => item.category === "clocks");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [viewMode]);
+
   return (
-    <div className="pb-12">
-      <div className="flex justify-end items-center gap-3 mb-6 mt-8">
+    <div className="py-2 sm:py-3 lg:py-5">
+      <div className="fixed w-fit right-6 top-[30%] md:top-[40%] z-50 justify-end items-center gap-3 mb-6 mt-8">
         <div className="flex bg-white rounded-sm border border-gray-500/20 overflow-hidden">
           <button
             onClick={() => setViewMode("grid")}
-            className={`flex items-center gap-2 px-4 py-2 transition-colors cursor-pointer ${
+            className={`flex items-center px-2 sm:px-4 py-2 transition-colors duration-200 cursor-pointer ${
               viewMode === "grid" ? "bg-orange-500 text-white" : "text-gray-600 hover:bg-gray-50"
             }`}
           >
@@ -42,7 +47,7 @@ const Clocks = ({ promise }) => {
           </button>
           <button
             onClick={() => setViewMode("book")}
-            className={`flex items-center gap-2 px-4 py-2 transition-colors cursor-pointer ${
+            className={`flex items-center px-2 md:px-4 py-2 transition-colors duration-200 cursor-pointer ${
               viewMode === "book" ? "bg-orange-500 text-white" : "text-gray-600 hover:bg-gray-50"
             }`}
           >
@@ -52,7 +57,7 @@ const Clocks = ({ promise }) => {
       </div>
 
       {viewMode === "grid" ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
           {data?.map((product) => (
             <ProductCard key={product.id} product={product} onClick={handleProductClick} />
           ))}

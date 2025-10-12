@@ -14,7 +14,6 @@ const BookCarousel = ({ products, onAddToCart }) => {
         <CarouselContent className="space-x-4">
           {products?.map((product, index) => (
             <CarouselItem key={index} className="basis-full flex justify-center items-center px-1 md:px-5">
-              {/* ✅ Remove BookViewCard’s outer max-width */}
               <div className="w-full">
                 <BookViewCard product={product} onAddToCart={onAddToCart} />
               </div>

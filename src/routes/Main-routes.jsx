@@ -28,7 +28,7 @@ export const MainRoutePaths = [
     path: "/gift",
     element: (
       <Suspense fallback={<Loader />}>
-        <Gift giftPromise={giftPromise} />
+        <Gift promise={giftPromise} />
       </Suspense>
     ),
   },
@@ -60,7 +60,7 @@ export const MainRoutePaths = [
     path: "/flowers",
     element: (
       <Suspense fallback={<Loader />}>
-        <Gift giftPromise={giftPromise} />
+        <Gift promise={giftPromise} />
       </Suspense>
     ),
   },
@@ -76,7 +76,7 @@ export const MainRoutePaths = [
     path: "/off",
     element: (
       <Suspense fallback={<Loader />}>
-        <Gift giftPromise={giftPromise} />
+        <Gift promise={giftPromise} />
       </Suspense>
     ),
   },

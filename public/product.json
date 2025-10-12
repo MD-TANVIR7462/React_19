@@ -360,7 +360,7 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png"
     ],
     "stock": 55,
-    "category": "clocks"
+    "category": "gift"
   },
   {
     "id": "lamp-4",
@@ -572,7 +572,7 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/62-204.png"
     ],
     "stock": 45,
-    "category": "clocks"
+    "category": "gift"
   },
   {
     "id": "wall-2",
@@ -738,7 +738,7 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
     ],
     "stock": 30,
-    "category": "clocks"
+    "category": "gift"
   },
   {
     "id": "sale-12",
@@ -754,7 +754,7 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-566.png"
     ],
     "stock": 25,
-    "category": "clocks",
+    "category": "gift",
     "discount": 50
   },
   {
@@ -771,7 +771,7 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-571.png"
     ],
     "stock": 40,
-    "category": "clocks",
+    "category": "gift",
     "discount": 50
   },
   {
@@ -784,7 +784,7 @@
     "description": "Modern metal sculpture for contemporary spaces.",
     "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
     "stock": 20,
-    "category": "clocks",
+    "category": "gift",
     "discount": 50
   },
   {
@@ -802,7 +802,7 @@
       "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
     ],
     "stock": 30,
-    "category": "clocks"
+    "category": "gift"
   },
   {
     "id": "sale-123",
@@ -849,6 +849,326 @@
     "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
     "stock": 20,
     "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "wall-5232",
+    "name": "Portrait Canvas Art",
+    "price": 30.0,
+    "code": "Pack: 8 PCS/CTN Size: WT-7X7\"",
+    "sizes": "",
+    "description": "Stunning portrait canvas art for elegant interior design.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-214.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
+    ],
+    "stock": 30,
+    "category": "clocks"
+  },
+  {
+    "id": "sale-1223",
+    "name": "clocks Swan Holder",
+    "price": 12.0,
+    "oldPrice": 24.0,
+    "code": "Pack: 6 PCS/CTN Size:",
+    "sizes": "8\"X6.5\"(H) 3.5..",
+    "description": "Elegant swan-shaped decorative holder. Limited time offer!",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-082.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-081.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-566.png"
+    ],
+    "stock": 25,
+    "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "sale-232",
+    "name": "Colorful Spoon Set",
+    "price": 8.0,
+    "oldPrice": 16.0,
+    "code": "Pack: Size: 10\" (IF-081...)",
+    "sizes": "",
+    "description": "Set of colorful decorative spoons. Perfect for kitchen decor.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/86-186.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-574.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-571.png"
+    ],
+    "stock": 40,
+    "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "sale-332",
+    "name": "Metal Sculpture",
+    "price": 15.0,
+    "oldPrice": 30.0,
+    "code": "Pack: 4 PCS/CTN Size: 24\"X",
+    "sizes": "",
+    "description": "Modern metal sculpture for contemporary spaces.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
+    "stock": 20,
+    "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "wall-5322",
+    "name": "Portrait Canvas Art",
+    "price": 30.0,
+    "code": "Pack: 8 PCS/CTN Size: WT-7X7\"",
+    "sizes": "",
+    "description": "Stunning portrait canvas art for elegant interior design.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-214.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
+    ],
+    "stock": 30,
+    "category": "clocks"
+  },
+  {
+    "id": "sale-1233",
+    "name": "clocks Swan Holder",
+    "price": 12.0,
+    "oldPrice": 24.0,
+    "code": "Pack: 6 PCS/CTN Size:",
+    "sizes": "8\"X6.5\"(H) 3.5..",
+    "description": "Elegant swan-shaped decorative holder. Limited time offer!",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-082.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-081.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-566.png"
+    ],
+    "stock": 25,
+    "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "sasle-22332",
+    "name": "Colorful Spoon Set",
+    "price": 8.0,
+    "oldPrice": 16.0,
+    "code": "Pack: Size: 10\" (IF-081...)",
+    "sizes": "",
+    "description": "Set of colorful decorative spoons. Perfect for kitchen decor.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/86-186.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-574.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-571.png"
+    ],
+    "stock": 40,
+    "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "sasle-3222",
+    "name": "Metal Sculpture",
+    "price": 15.0,
+    "oldPrice": 30.0,
+    "code": "Pack: 4 PCS/CTN Size: 24\"X",
+    "sizes": "",
+    "description": "Modern metal sculpture for contemporary spaces.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
+    "stock": 20,
+    "category": "clocks",
+    "discount": 50
+  },
+  {
+    "id": "wasll-522",
+    "name": "Portrait Canvas Art",
+    "price": 30.0,
+    "code": "Pack: 8 PCS/CTN Size: WT-7X7\"",
+    "sizes": "",
+    "description": "Stunning portrait canvas art for elegant interior design.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-214.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
+    ],
+    "stock": 30,
+    "category": "gift"
+  },
+  {
+    "id": "sale-sdf123",
+    "name": "clocks Swan Holder",
+    "price": 12.0,
+    "oldPrice": 24.0,
+    "code": "Pack: 6 PCS/CTN Size:",
+    "sizes": "8\"X6.5\"(H) 3.5..",
+    "description": "Elegant swan-shaped decorative holder. Limited time offer!",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-082.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-081.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-566.png"
+    ],
+    "stock": 25,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "sale-2sd232",
+    "name": "Colorful Spoon Set",
+    "price": 8.0,
+    "oldPrice": 16.0,
+    "code": "Pack: Size: 10\" (IF-081...)",
+    "sizes": "",
+    "description": "Set of colorful decorative spoons. Perfect for kitchen decor.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/86-186.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-574.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-571.png"
+    ],
+    "stock": 40,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "sasle-322",
+    "name": "Metal Sculpture",
+    "price": 15.0,
+    "oldPrice": 30.0,
+    "code": "Pack: 4 PCS/CTN Size: 24\"X",
+    "sizes": "",
+    "description": "Modern metal sculpture for contemporary spaces.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
+    "stock": 20,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "wall-5232dsf",
+    "name": "Portrait Canvas Art",
+    "price": 30.0,
+    "code": "Pack: 8 PCS/CTN Size: WT-7X7\"",
+    "sizes": "",
+    "description": "Stunning portrait canvas art for elegant interior design.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-214.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
+    ],
+    "stock": 30,
+    "category": "gift"
+  },
+  {
+    "id": "sale-1223",
+    "name": "clocks Swan Holder",
+    "price": 12.0,
+    "oldPrice": 24.0,
+    "code": "Pack: 6 PCS/CTN Size:",
+    "sizes": "8\"X6.5\"(H) 3.5..",
+    "description": "Elegant swan-shaped decorative holder. Limited time offer!",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-082.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-081.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-566.png"
+    ],
+    "stock": 25,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "sale-232",
+    "name": "Colorful Spoon Set",
+    "price": 8.0,
+    "oldPrice": 16.0,
+    "code": "Pack: Size: 10\" (IF-081...)",
+    "sizes": "",
+    "description": "Set of colorful decorative spoons. Perfect for kitchen decor.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/86-186.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-574.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-571.png"
+    ],
+    "stock": 40,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "sale-332",
+    "name": "Metal Sculpture",
+    "price": 15.0,
+    "oldPrice": 30.0,
+    "code": "Pack: 4 PCS/CTN Size: 24\"X",
+    "sizes": "",
+    "description": "Modern metal sculpture for contemporary spaces.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
+    "stock": 20,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "wall-5322",
+    "name": "Portrait Canvas Art",
+    "price": 30.0,
+    "code": "Pack: 8 PCS/CTN Size: WT-7X7\"",
+    "sizes": "",
+    "description": "Stunning portrait canvas art for elegant interior design.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-159.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-158.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-160.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-214.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/68-213.png"
+    ],
+    "stock": 30,
+    "category": "gift"
+  },
+  {
+    "id": "sale-1233",
+    "name": "clocks Swan Holder",
+    "price": 12.0,
+    "oldPrice": 24.0,
+    "code": "Pack: 6 PCS/CTN Size:",
+    "sizes": "8\"X6.5\"(H) 3.5..",
+    "description": "Elegant swan-shaped decorative holder. Limited time offer!",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-082.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-081.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-566.png"
+    ],
+    "stock": 25,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "sale-22332",
+    "name": "Colorful Spoon Set",
+    "price": 8.0,
+    "oldPrice": 16.0,
+    "code": "Pack: Size: 10\" (IF-081...)",
+    "sizes": "",
+    "description": "Set of colorful decorative spoons. Perfect for kitchen decor.",
+    "images": [
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/86-186.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-574.png",
+      "https://demomirtextrading.siscotech.com/admin/views/product/documents/85-571.png"
+    ],
+    "stock": 40,
+    "category": "gift",
+    "discount": 50
+  },
+  {
+    "id": "sale-3222",
+    "name": "Metal Sculpture",
+    "price": 15.0,
+    "oldPrice": 30.0,
+    "code": "Pack: 4 PCS/CTN Size: 24\"X",
+    "sizes": "",
+    "description": "Modern metal sculpture for contemporary spaces.",
+    "images": ["https://demomirtextrading.siscotech.com/admin/views/product/documents/86-185.png"],
+    "stock": 20,
+    "category": "gift",
     "discount": 50
   }
 ]
