@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import Everyday from "@/pages/Main/Everyday";
 import Clocks from "@/pages/Main/Clocks";
 import Islamic from "@/pages/Main/Islamic";
+import SalesPersonDashboard from "@/components/SalesPersonDashboard/SalesPersonDashboard";
 
 // Fetch data outside the component to leverage React Suspense
 const productPromise = usePromise("/product.json");
@@ -78,6 +79,14 @@ export const MainRoutePaths = [
       <Suspense fallback={<Loader />}>
         <Gift promise={giftPromise} />
       </Suspense>
+    ),
+  },
+  //sales person dashboard......
+  {
+    path: "/salesman-dashboard",
+    element: (
+     <SalesPersonDashboard/>
+   
     ),
   },
 ];

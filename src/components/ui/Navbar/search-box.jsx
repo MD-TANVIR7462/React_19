@@ -188,15 +188,6 @@ const SearchBox = () => {
           </div>
         )}
       </Command>
-
-      {/* Selected Product Info (optional) */}
-      {/* {selectedProduct && (
-        <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <p className="text-sm text-blue-800">
-            Selected: <strong>{selectedProduct.brand} - {selectedProduct.title}</strong>
-          </p>
-        </div>
-      )} */}
     </div>
   );
 };

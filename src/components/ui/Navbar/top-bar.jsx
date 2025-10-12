@@ -5,6 +5,7 @@ import { Search, ShoppingCart, User, ChevronDown, Settings, LogOut, Menu, X } fr
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import SearchBox from "./search-box";
+import { ProfileDropdown } from "./ProfileDropdown";
 
 export default function TopBar({
   isLoggedIn,
@@ -54,62 +55,7 @@ export default function TopBar({
         {/* Right side - Desktop */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center  space-x-2">
-            {isLoggedIn && (
-              <div className="relative" ref={profileRef}>
-                <Button
-                  variant="ghost"
-                  className="text-foreground hover:text-primary transition-colors cursor-pointer"
-                  onMouseEnter={() => setShowProfileDropdown(true)}
-                  onClick={() => setShowProfileDropdown(!showProfileDropdown)}
-                >
-                  <User className="w-6 h-6 " />
-
-                  <Badge
-                    variant="ghost "
-                    className="absolute -top-0.5 -right-0.5  w-5 h-5 border-none flex items-center justify-center p-0 text-xs "
-                  >
-                    <ChevronDown className="w-2 h-2" />
-                  </Badge>
-                </Button>
-
-                {showProfileDropdown && (
-                  <div
-                    className="absolute right-0 top-full mt-2 w-48 bg-popover border border-border rounded-md shadow-lg py-1 z-50 animate-in slide-in-from-top-2 duration-200"
-                    onMouseLeave={() => setShowProfileDropdown(false)}
-                  >
-                    <a
-                      href="/dashboard"
-                      className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                    >
-                      <Settings className="w-4 h-4 mr-2" />
-                      Dashboard
-                    </a>
-                    <a
-                      href="/orders"
-                      className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                    >
-                      <ShoppingCart className="w-4 h-4 mr-2" />
-                      My Orders
-                    </a>
-                    <a
-                      href="/settings"
-                      className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                    >
-                      <Settings className="w-4 h-4 mr-2" />
-                      Settings
-                    </a>
-                    <hr className="my-1 border-border" />
-                    <button
-                      onClick={onLoginToggle}
-                      className="flex items-center w-full px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors text-left cursor-pointer"
-                    >
-                      <LogOut className="w-4 h-4 mr-2" />
-                      Logout
-                    </button>
-                  </div>
-                )}
-              </div>
-            )}
+            <ProfileDropdown isLoggedIn={isLoggedIn} onLoginToggle={onLoginToggle} />
           </div>
 
           {/* Desktop Cart */}
@@ -152,11 +98,16 @@ export default function TopBar({
                 />
                 <div className="fixed inset-x-4 top-20 bg-background border border-border rounded-xl shadow-xl z-50 animate-in slide-in-from-top-2 duration-200">
                   <div className="p-4 w-full ">
-                  <div className="ms-auto w-fit mb-2">
-                      <Button variant="ghost" size="icon" className={"cursor-pointer"}  onClick={() => setShowMobileSearch(false)}>
-                      <X className="w-4 h-4 " />
-                    </Button>
-                  </div>
+                    <div className="ms-auto w-fit mb-2">
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className={"cursor-pointer"}
+                        onClick={() => setShowMobileSearch(false)}
+                      >
+                        <X className="w-4 h-4 " />
+                      </Button>
+                    </div>
                     <SearchBox compact={true} className="" />
                   </div>
                 </div>
@@ -166,50 +117,7 @@ export default function TopBar({
 
           {/* Mobile Profile */}
           {isLoggedIn ? (
-            <div className="relative" ref={profileRef}>
-              {/* <Button variant="ghost" size="icon" onClick={() => setShowProfileDropdown(!showProfileDropdown)}>
-                <User className="w-5 h-5" />
-              </Button> */}
-              <Button
-                variant="ghost"
-                className="text-foreground hover:text-primary transition-colors cursor-pointer"
-                onClick={() => setShowProfileDropdown(!showProfileDropdown)}
-              >
-                <User className="w-4 h-4 " />
-
-                <Badge
-                  variant="ghost "
-                  className="absolute -top-0.5 -right-0.5  w-5 h-5 border-none flex items-center justify-center p-0 text-xs "
-                >
-                  <ChevronDown className="w-2 h-2" />
-                </Badge>
-              </Button>
-              {showProfileDropdown && (
-                <div className="absolute right-0 top-full mt-2 w-48 bg-popover border border-border rounded-md shadow-lg py-1 z-50 animate-in slide-in-from-top-2 duration-200">
-                  <a
-                    href="/dashboard"
-                    className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                  >
-                    <Settings className="w-4 h-4 mr-2" />
-                    Dashboard
-                  </a>
-                  <a
-                    href="/orders"
-                    className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                  >
-                    <ShoppingCart className="w-4 h-4 mr-2" />
-                    My Orders
-                  </a>
-                  <button
-                    onClick={onLoginToggle}
-                    className="flex items-center w-full px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors text-left"
-                  >
-                    <LogOut className="w-4 h-4 mr-2" />
-                    Logout
-                  </button>
-                </div>
-              )}
-            </div>
+            <ProfileDropdown isLoggedIn={isLoggedIn} onLoginToggle={onLoginToggle} />
           ) : (
             <Button variant="ghost" size="icon" onClick={onLoginToggle}>
               <User className="w-5  h-5" />
