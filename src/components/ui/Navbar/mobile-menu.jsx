@@ -49,7 +49,7 @@ export default function MobileMenu({ isOpen, onClose, isLoggedIn, onLoginToggle 
                   to={item.href}
                   key={item.name}
                   variant="ghost"
-                  className="justify-start w-full h-12 text-left hover:bg-muted/50 transition-colors"
+                  className="justify-start w-full h-8 hover:text-orange-500 text-left hover:bg-muted/50 transition-colors flex items-center"
                 >
                   <item.icon className="w-4 h-4 mr-3" />
                   {item.name}

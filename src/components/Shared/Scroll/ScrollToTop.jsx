@@ -24,7 +24,7 @@ const ScrollToTop = () => {
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 1 }}
       aria-label="Scroll to top"
-      className={`hidden md:block md:fixed bottom-6 cursor-pointer right-6 z-50 p-3 rounded-full bg-orange-500/80 text-white shadow-lg transition-all duration-300 hover:bg-orange-600/80 ${
+      className={`hidden md:block md:fixed bottom-6 cursor-pointer right-6 z-20 p-3 rounded-full bg-orange-500/80 text-white shadow-lg transition-all duration-300 hover:bg-orange-600/80 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
       }`}
     >
