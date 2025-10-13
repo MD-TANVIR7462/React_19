@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import { Home, TrendingUp, FileText, Users, User, LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SideBar = () => {
-  const [activeSection, setActiveSection] = useState("dashboard");
+  const { pathname } = useLocation();
   const navigate = useNavigate();
   const navItems = [
-    { icon: Home, label: "Dashboard", section: "dashboard", route: "/salesman-dashboard" },
-    { icon: TrendingUp, label: "Sales Order", section: "salesorder", route: "/salesman-dashboard/salesorders" },
-    { icon: FileText, label: "Invoice", section: "invoice", route: "/salesman-dashboard/invoices" },
-    { icon: Users, label: "Customer List", section: "customerlist", route: "/salesman-dashboard/cutomers" },
-    { icon: User, label: "Profile", section: "profile", route: "/salesman-dashboard/profile" },
+    { icon: Home, label: "Dashboard", route: "/salesman-dashboard" },
+    { icon: TrendingUp, label: "Sales Order", route: "/salesman-dashboard/salesorders" },
+    { icon: FileText, label: "Invoice", route: "/salesman-dashboard/invoices" },
+    { icon: Users, label: "Customer List", route: "/salesman-dashboard/cutomers" },
+    { icon: User, label: "Profile", route: "/salesman-dashboard/profile" },
   ];
-  const handleNavigate = (route) => {
-    navigate(route);
-  };
+
   return (
     <aside className="w-full mb-5 lg:mb-0 lg:w-72 bg-card md:p-6  sm:p-4 p-3 flex flex-col rounded-sm h-fit">
       {/* Profile Section */}
@@ -34,15 +32,15 @@ const SideBar = () => {
           <button
             key={item.label}
             onClick={() => {
-              setActiveSection(item.section), handleNavigate(item.route);
+              navigate(item.route);
             }}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-sm text-sm font-medium transition-colors cursor-pointer ${
-              activeSection === item.section
+              pathname === item.route
                 ? "bg-secondary text-secondary-foreground"
                 : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
             }`}
           >
-            <item.icon className="md:h-5 md:w-5 h-4 2-4" />
+            <item.icon className="md:h-5 md:w-5 h-4 w-4" />
             {item.label}
           </button>
         ))}
