@@ -60,7 +60,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   return null;
 };
 
-const DashboardStats = () => {
+const SalesPersonDashboardStats = () => {
   return (
     <div className="space-y-6">
       {/* Main Stats Grid */}
@@ -247,4 +247,4 @@ const DashboardStats = () => {
   );
 };
 
-export default DashboardStats;
+export default SalesPersonDashboardStats;
