@@ -102,51 +102,70 @@ const OrderHistory = () => {
   };
 
   return (
-    <Card className="rounded-sm p-0">
-      <CardContent className="p-4">
-        <h2 className="text-xl font-semibold text-foreground mb-4 ">Order History</h2>
+    <Card className="rounded-sm p-0 shadow-sm border">
+      <CardContent className="p-2 md:p-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">Order History</h2>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="mb-4">
-            <TabsTrigger value="all">All Orders</TabsTrigger>
-            <TabsTrigger value="pending">Pending</TabsTrigger>
-            <TabsTrigger value="delivered">Delivered</TabsTrigger>
-            <TabsTrigger value="complete">Complete</TabsTrigger>
+          {/* Tab Buttons */}
+          <TabsList className="mb-4 flex whitespace-nowrap t sm:gap-2 overflow-x-auto w-full rounded-sm px-2">
+            <TabsTrigger value="all"       className="text-xs sm:text-sm cursor-pointer rounded-sm">All Orders</TabsTrigger>
+            <TabsTrigger value="pending"   className="text-xs sm:text-sm cursor-pointer rounded-sm">Pending</TabsTrigger>
+            <TabsTrigger value="delivered" className="text-xs sm:text-sm cursor-pointer rounded-sm" >Delivered</TabsTrigger>
+            <TabsTrigger value="complete"  className="text-xs sm:text-sm cursor-pointer rounded-sm">Complete</TabsTrigger>
           </TabsList>
 
           <TabsContent value={activeTab} className="mt-0">
-            <div className="overflow-x-auto  h-[60dvh] max-h-[1000px] overflow-y-auto">
-              <table className="w-full ">
-                <thead>
-                  <tr className="border-b bg-gray-50  border-border">
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">Order NO</th>
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">
+            {/* Responsive Table Wrapper */}
+            <div className="overflow-x-auto max-w-full h-[60dvh] max-h-[1000px] lg:w-[70dvw] xl:w-full ">
+              <table className="min-w-full border-collapse text-sm text-foreground">
+                <thead className="bg-gray-100 border-b ">
+                  <tr>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
+                      Order No
+                    </th>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
                       Customer Name
                     </th>
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">Terms</th>
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">Total</th>
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">Date</th>
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">Action</th>
-                    <th className="text-left py-4 px-2 text-md font-medium text-muted-foreground border ">Views</th>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
+                      Terms
+                    </th>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
+                      Total
+                    </th>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
+                      Date
+                    </th>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
+                      Action
+                    </th>
+                    <th className="py-3 px-4 text-left font-medium text-muted-foreground border whitespace-nowrap">
+                      Views
+                    </th>
                   </tr>
                 </thead>
+
                 <tbody>
                   {filterOrders(activeTab).map((order) => (
-                    <tr key={order.id} className="border-b border-border last:border-0">
-                      <td className="py-2 px-2 text-sm text-foreground border">{order.id}</td>
-                      <td className="py-2 px-2 border">
+                    <tr key={order.id} className="border-b hover:bg-gray-50 transition-colors">
+                      <td className="py-3 px-4 border whitespace-nowrap">{order.id}</td>
+                      <td className="py-3 px-4 border whitespace-nowrap">
                         <div className="flex items-center gap-3">
-                          <div>
-                            <p className="text-sm font-medium text-foreground">Tajul Islam</p>
-                            <p className="text-xs text-muted-foreground">Hillview</p>
+                          <div className="min-w-[100px]">
+                            <p className="text-sm font-medium truncate max-w-[140px]">Tajul Islam</p>
+                            <p className="text-xs text-muted-foreground truncate max-w-[140px]">Hillview</p>
                           </div>
                         </div>
                       </td>
-                      <td className="py-2 px-2 text-sm text-foreground border">1/2 Cash-1/2P/D 30</td>
-                      <td className="py-2 px-2 border">${order.price.toFixed(2)}</td>
-                      <td className="py-2 px-2 border">10/11/2025</td>
-                      <td className="py-2 px-2 border">Edit</td>
-                      <td className="py-2 px-2 border">View</td>
+                      <td className="py-3 px-4 border whitespace-nowrap">1/2 Cash - 1/2 P/D 30</td>
+                      <td className="py-3 px-4 border whitespace-nowrap">${order.price.toFixed(2)}</td>
+                      <td className="py-3 px-4 border whitespace-nowrap">10/11/2025</td>
+                      <td className="py-3 px-4 border whitespace-nowrap text-primary cursor-pointer hover:underline">
+                        Edit
+                      </td>
+                      <td className="py-3 px-4 border whitespace-nowrap text-blue-600 cursor-pointer hover:underline">
+                        View
+                      </td>
                     </tr>
                   ))}
                 </tbody>

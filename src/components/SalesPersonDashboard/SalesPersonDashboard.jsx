@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent } from "@/components/ui/card";
-import { Home, TrendingUp, FileText, Users, User, LogOut, Hourglass, XCircle, PackageOpen } from "lucide-react";
-import { demoOrders } from "@/data/SalespersonDashboard";
+import { Home, TrendingUp, FileText, Users, User, LogOut } from "lucide-react";
 import OrderHistory from "./OrderHistory/OrderHistory";
 import { CustomerList } from "./CustomerList/CustomerList";
 import InvoiceList from "./Invoice/InvoiceList";
@@ -20,14 +18,14 @@ export default function SalesPersonDashboard() {
   ];
 
   return (
-    <div className="flex py-5 gap-5">
+    <div className="lg:flex py-5 gap-5">
       {/* Sidebar */}
-      <aside className="w-72 bg-card p-6 flex flex-col rounded-sm h-fit">
+      <aside className="w-full mb-5 lg:mb-0 lg:w-72 bg-card md:p-6  sm:p-4 p-3 flex flex-col rounded-sm h-fit">
         {/* Profile Section */}
-        <div className="flex flex-col items-center mb-8">
-          <Avatar className="h-32 w-32 mb-4">
+        <div className="flex flex-col items-center mb-3 md:mb-5 lg:mb-8">
+          <Avatar className="w-20 h-20 md:w-28 md:h-28 lg:h-32 lg:w-32 mb-2 md:mb-4">
             <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Joe Draft" />
-            <AvatarFallback className="text-2xl">JD</AvatarFallback>
+            <AvatarFallback className=" text-lg md:text-xl lg:text-2xl">JD</AvatarFallback>
           </Avatar>
           <h2 className="text-xl font-semibold text-foreground">Joe Draft</h2>
           <p className="text-sm text-muted-foreground">joe.draft@gmail.com</p>
@@ -39,13 +37,13 @@ export default function SalesPersonDashboard() {
             <button
               key={item.label}
               onClick={() => setActiveSection(item.section)}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-sm text-sm font-medium transition-colors cursor-pointer ${
                 activeSection === item.section
                   ? "bg-secondary text-secondary-foreground"
                   : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
               }`}
             >
-              <item.icon className="h-5 w-5" />
+              <item.icon className="md:h-5 md:w-5 h-4 2-4" />
               {item.label}
             </button>
           ))}

@@ -176,46 +176,46 @@ export function CustomerList() {
 
   return (
     <Card className="rounded-md shadow-sm border">
-      <CardContent className="p-4">
-        <div className="flex items-center justify-between mb-4">
+      <CardContent className="p-2 md:p-4">
+        <div className=" flex flex-col-reverse gap-5 w-full sm:flex-row items-center justify-between mb-4">
           <div className="relative flex-1 max-w-md">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
             <Input
               placeholder="Search customers..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9 border-gray-300  rounded"
+              className="pl-9 border-gray-300  rounded w-full"
             />
           </div>
-          <Button onClick={() => setDialogOpen(true)} className="bg-green-600 hover:bg-green-700 ml-4">
-            <Plus className="h-4 w-4 mr-2" />
+          <Button onClick={() => setDialogOpen(true)} className="bg-green-600 hover:bg-green-700 ml-4 ">
+            <Plus className="h-4 w-4 mr-2 hidden md:block" />
             Add Customer
           </Button>
         </div>
 
-        <div className="overflow-x-auto h-[60dvh] max-h-[1000px] overflow-y-auto  ">
+        <div className="overflow-x-auto h-[60dvh] max-h-[1000px] overflow-y-auto w-full border lg:w-[70dvw] xl:w-full ">
           <table className="w-full  text-sm">
             <thead className="bg-gray-50 border-b">
               <tr>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Code</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Name</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Email</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Phone</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Terms</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">State</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Action</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Code</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Name</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Email</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Phone</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Terms</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">State</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Action</th>
               </tr>
             </thead>
             <tbody>
               {filteredCustomers.map((customer) => (
                 <tr key={customer.id} className="border-b last:border-0 hover:bg-gray-50 transition-colors">
-                  <td className="py-3 px-4 border">{customer.code}</td>
-                  <td className="py-3 px-4 border font-medium">{customer.name}</td>
-                  <td className="py-3 px-4 border text-gray-600">{customer.email}</td>
-                  <td className="py-3 px-4 border text-gray-600">{customer.phone}</td>
-                  <td className="py-3 px-4 border">{customer.terms}</td>
-                  <td className="py-3 px-4 border">{getStateBadge(customer.state)}</td>
-                  <td className="py-3 px-4 border">
+                  <td className="whitespace-nowrap py-3 px-4 border">{customer.code}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border font-medium">{customer.name}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border text-gray-600">{customer.email}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border text-gray-600">{customer.phone}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border">{customer.terms}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border">{getStateBadge(customer.state)}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border">
                     <Button
                       variant="ghost"
                       size="icon"

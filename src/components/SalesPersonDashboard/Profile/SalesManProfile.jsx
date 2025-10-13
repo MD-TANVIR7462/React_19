@@ -44,7 +44,7 @@ export function SalesManProfile() {
   };
 
   return (
-    <div className=" mx-auto ">
+    <div className=" mx-auto lg:w-[70dvw] xl:w-full">
       <Card className="shadow-md border border-gray-200 bg-gradient-to-br from-white to-gray-50">
         <CardHeader className="flex flex-row items-center justify-between pb-4 border-b">
           <CardTitle className="text-xl font-semibold text-gray-800">Profile Information</CardTitle>

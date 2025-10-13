@@ -154,7 +154,7 @@ export default function InvoiceList() {
 
   return (
     <Card className="rounded-md shadow-sm border">
-      <CardContent className="p-4">
+      <CardContent className="p-2 md:p-4" >
         {/* Search Bar */}
         <div className="flex items-center justify-between mb-4">
           <div className="relative flex-1 max-w-md">
@@ -169,27 +169,27 @@ export default function InvoiceList() {
         </div>
 
         {/* Data Table */}
-        <div className="overflow-x-auto h-[60dvh] max-h-[1000px] overflow-y-auto">
+        <div className="overflow-x-auto h-[60dvh] max-h-[1000px] overflow-y-auto lg:w-[70dvw] xl:w-full">
           <table className="w-full text-sm">
             <thead className="bg-gray-50 border-b">
               <tr>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Invoice No</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Customer Name</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Total</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Delivery Status</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Payment Status</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-600 border">Date Purchased</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Invoice No</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Customer Name</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Total</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Delivery Status</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Payment Status</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-600 border whitespace-nowrap">Date Purchased</th>
               </tr>
             </thead>
             <tbody>
               {filteredInvoices.map((invoice) => (
                 <tr key={invoice.id} className="border-b last:border-0 hover:bg-gray-50 transition-colors">
-                  <td className="py-3 px-4 border font-medium">{invoice.invoiceNo}</td>
-                  <td className="py-3 px-4 border">{invoice.customerName}</td>
-                  <td className="py-3 px-4 border text-gray-700">${invoice.total.toFixed(2)}</td>
-                  <td className="py-3 px-4 border">{getDeliveryBadge(invoice.deliveryStatus)}</td>
-                  <td className="py-3 px-4 border">{getPaymentBadge(invoice.paymentStatus)}</td>
-                  <td className="py-3 px-4 border text-gray-500">
+                  <td className="whitespace-nowrap py-3 px-4 border font-medium">{invoice.invoiceNo}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border">{invoice.customerName}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border text-gray-700">${invoice.total.toFixed(2)}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border">{getDeliveryBadge(invoice.deliveryStatus)}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border">{getPaymentBadge(invoice.paymentStatus)}</td>
+                  <td className="whitespace-nowrap py-3 px-4 border text-gray-500">
                     {new Date(invoice.datePurchased).toLocaleDateString()}
                   </td>
                 </tr>
