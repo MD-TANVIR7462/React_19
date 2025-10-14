@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Loader from "@/components/Shared/Loader/Loader";
 import Home from "@/pages/Main/Home";
 import Gift from "@/pages/Main/Gift";
@@ -6,9 +7,11 @@ import { Suspense } from "react";
 import Everyday from "@/pages/Main/Everyday";
 import Clocks from "@/pages/Main/Clocks";
 import Islamic from "@/pages/Main/Islamic";
-import SalesPersonDashboard from "@/layouts/SalesPersonLayout";
+import CheckoutPage from "@/pages/SalesPersonDashboard/Checkout";
+import CartPage from "@/pages/SalesPersonDashboard/Cart";
 
 // Fetch data outside the component to leverage React Suspense
+
 const productPromise = usePromise("/product.json");
 const giftPromise = usePromise("/product.json");
 const everydayPromise = usePromise("/product.json");
@@ -81,12 +84,13 @@ export const MainRoutePaths = [
       </Suspense>
     ),
   },
-  //sales person dashboard......
+  //sales person Cartpage......
   {
-    path: "/salesman-dashboard",
-    element: (
-     <SalesPersonDashboard/>
-   
-    ),
+    path: "/cart",
+    element: <CartPage />,
+  },
+  {
+    path: "/checkout",
+    element: <CheckoutPage />,
   },
 ];

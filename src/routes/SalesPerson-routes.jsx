@@ -1,9 +1,8 @@
-
-import { CustomerList } from "@/components/SalesPersonDashboard/CustomerList/CustomerList";
 import SalesPersonDashboardStats from "@/components/SalesPersonDashboard/DashboardStates/DashboardStates";
-import InvoiceList from "@/components/SalesPersonDashboard/Invoice/InvoiceList";
-import OrderHistory from "@/components/SalesPersonDashboard/OrderHistory/OrderHistory";
-import { SalesManProfile } from "@/components/SalesPersonDashboard/Profile/SalesManProfile";
+import { CustomerList } from "@/pages/SalesPersonDashboard/CustomerList";
+import InvoiceList from "@/pages/SalesPersonDashboard/InvoiceList";
+import OrderHistory from "@/pages/SalesPersonDashboard/OrderHistory";
+import { SalesManProfile } from "@/pages/SalesPersonDashboard/SalesManProfile";
 
 export const SalesPersonRoutePaths = [
   {

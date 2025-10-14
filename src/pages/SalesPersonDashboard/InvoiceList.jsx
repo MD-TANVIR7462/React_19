@@ -167,7 +167,7 @@ export default function InvoiceList() {
         </div>
 
         {/* Data Table */}
-        <div className="overflow-x-auto h-[60dvh] max-h-[1000px] overflow-y-auto lg:w-[70dvw] xl:w-full">
+        <div className="overflow-x-auto  h-[60dvh] max-h-[1000px] overflow-y-auto lg:w-[70dvw] xl:w-full w-[400px]">
           <table className="w-full text-sm">
             <thead className="bg-gray-50 border-b">
               <tr>

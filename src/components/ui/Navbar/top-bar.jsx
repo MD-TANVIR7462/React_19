@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { Search, ShoppingCart, User, ChevronDown, Settings, LogOut, Menu, X } from "lucide-react";
+import { useState, useRef } from "react";
+import { Search, ShoppingCart, User, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import SearchBox from "./search-box";
@@ -15,27 +15,8 @@ export default function TopBar({
   onMobileMenuToggle,
   isMobileMenuOpen,
 }) {
-  const [showProfileDropdown, setShowProfileDropdown] = useState(false);
   const [showMobileSearch, setShowMobileSearch] = useState(false);
-  const profileRef = useRef(null);
   const searchRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      const target = event.target;
-
-      if (profileRef.current && !profileRef.current.contains(target)) {
-        setShowProfileDropdown(false);
-      }
-
-      if (searchRef.current && !searchRef.current.contains(target)) {
-        setShowMobileSearch(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   return (
     <div className="max-w-[1400px] mx-auto px-4  ">

@@ -1,12 +1,19 @@
-"use client"
-import { X, Plus, Minus, Trash2 } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
+import { X, Plus, Minus, Trash2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {  useNavigate } from "react-router-dom";
 
 export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, onRemoveItem }) {
-  const cartTotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0)
-  const cartCount = items.reduce((sum, item) => sum + item.quantity, 0)
-
+  const cartTotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
+  const navigate = useNavigate();
+  const handleCart = () => {
+    onClose();
+    navigate("/cart");
+  };
+  const handleCheckout = () => {
+    onClose();
+    navigate("/checkout");
+  };
   return (
     <>
       {/* Backdrop */}
@@ -61,7 +68,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.name}
-                  className="w-16 h-16 object-cover rounded-lg border border-border"
+                  className="w-16 h-16 object-cover rounded-sm border border-border "
                 />
                 <div className="flex-1 min-w-0">
                   <h4 className="font-medium text-sm text-foreground truncate">{item.name}</h4>
@@ -74,8 +81,8 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                       className="w-8 h-8 bg-background hover:bg-muted transition-colors cursor-pointer"
                       data-cart-control="true"
                       onClick={(e) => {
-                        e.stopPropagation()
-                        onUpdateQuantity(item.id, item.quantity - 1)
+                        e.stopPropagation();
+                        onUpdateQuantity(item.id, item.quantity - 1);
                       }}
                       disabled={item.quantity <= 1}
                     >
@@ -90,8 +97,8 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                       className="w-8 h-8 bg-background hover:bg-muted transition-colors cursor-pointer"
                       data-cart-control="true"
                       onClick={(e) => {
-                        e.stopPropagation()
-                        onUpdateQuantity(item.id, item.quantity + 1)
+                        e.stopPropagation();
+                        onUpdateQuantity(item.id, item.quantity + 1);
                       }}
                     >
                       <Plus className="w-3 h-3" />
@@ -106,8 +113,8 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                     className="w-8 h-8 text-destructive hover:text-destructive hover:bg-destructive/10 rounded-full transition-colors cursor-pointer"
                     data-cart-control="true"
                     onClick={(e) => {
-                      e.stopPropagation()
-                      onRemoveItem(item.id)
+                      e.stopPropagation();
+                      onRemoveItem(item.id);
                     }}
                   >
                     <Trash2 className="w-4 h-4" />
@@ -123,17 +130,27 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
           <div className="border-t border-border p-4 bg-muted/5">
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg font-semibold">Total:</span>
-              <span className="text-xl font-bold text-primary"><span className="green-color">$</span>{cartTotal.toLocaleString()}</span>
+              <span className="text-xl font-bold text-primary">
+                <span className="green-color">$</span>
+                {cartTotal.toLocaleString()}
+              </span>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              <Button variant="outline" className="w-full bg-background hover:bg-muted transition-colors cursor-pointer">
+              <Button
+                onClick={handleCart}
+                variant="outline"
+                className="w-full bg-background hover:bg-muted transition-colors cursor-pointer"
+              >
                 View Cart
               </Button>
-              <Button className="w-full cursor-pointer green-background">Checkout</Button>
+
+              <Button onClick={handleCheckout} className="w-full cursor-pointer green-background">
+                Checkout
+              </Button>
             </div>
           </div>
         )}
       </div>
     </>
-  )
+  );
 }

@@ -4,7 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Plus, Pencil } from "lucide-react";
-import { CustomerDialog } from "./CustomerModal";
+import { CustomerDialog } from "@/components/SalesPersonDashboard/CustomerList/CustomerModal";
+
 
 const demoCustomers = [
   {

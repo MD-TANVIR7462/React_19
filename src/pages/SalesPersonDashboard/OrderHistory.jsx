@@ -85,16 +85,16 @@ const demoOrders = [
 const OrderHistory = () => {
   const [activeTab, setActiveTab] = useState("all");
 
-  const getStatusBadge = (status) => {
-    const statusConfig = {
-      pending: { label: "Pending", className: "bg-yellow-100 text-yellow-800 hover:bg-yellow-100" },
-      delivered: { label: "Delivery", className: "bg-blue-100 text-blue-800 hover:bg-blue-100" },
-      complete: { label: "Completed", className: "bg-green-100 text-green-800 hover:bg-green-100" },
-      canceled: { label: "Canceled", className: "bg-red-100 text-red-800 hover:bg-red-100" },
-    };
-    const config = statusConfig[status];
-    return <Badge className={config.className}>{config.label}</Badge>;
-  };
+  // const getStatusBadge = (status) => {
+  //   const statusConfig = {
+  //     pending: { label: "Pending", className: "bg-yellow-100 text-yellow-800 hover:bg-yellow-100" },
+  //     delivered: { label: "Delivery", className: "bg-blue-100 text-blue-800 hover:bg-blue-100" },
+  //     complete: { label: "Completed", className: "bg-green-100 text-green-800 hover:bg-green-100" },
+  //     canceled: { label: "Canceled", className: "bg-red-100 text-red-800 hover:bg-red-100" },
+  //   };
+  //   const config = statusConfig[status];
+  //   return <Badge className={config.className}>{config.label}</Badge>;
+  // };
 
   const filterOrders = (status) => {
     if (status === "all") return demoOrders;
