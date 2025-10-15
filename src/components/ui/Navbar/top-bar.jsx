@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import SearchBox from "./search-box";
 import { ProfileDropdown } from "./ProfileDropdown";
+import { Link } from "react-router-dom";
 
 export default function TopBar({
   isLoggedIn,
@@ -23,9 +24,11 @@ export default function TopBar({
       <div className="flex items-center justify-between py-2 md:py-4 ">
         {/* Left side - Logo and Company Name */}
         <div className="flex items-center space-x-3 ">
-          <div className="flex-shrink-0">
-            <img src="\brand_logo.png" alt="" className="h-14 md:h-20" />
-          </div>
+          <Link to={"/"}>
+            <div className="flex-shrink-0">
+              <img src="\brand_logo.png" alt="" className="h-14 md:h-20" />
+            </div>
+          </Link>
         </div>
 
         {/* Center - Desktop Search */}
