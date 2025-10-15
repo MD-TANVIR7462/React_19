@@ -14,18 +14,18 @@ const Confirm = ({ open, onOpenChange, onConfirm, text }) => {
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent>
-        <AlertDialogHeader>
+        <AlertDialogHeader className="flex items-center gap-2">
           <AlertDialogTitle className="flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-primary" />
             <span className="capitalize">Confirm {text}</span>
           </AlertDialogTitle>
-          <AlertDialogDescription className="space-y-2">
-            <span className="block ">Are you sure you want to save this {text}</span>
+          <AlertDialogDescription >
+            <span>Are you sure you want to save this {text}</span>
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction onClick={onConfirm} className="btn-confirm w-fit! ">
+        <AlertDialogFooter >
+          <AlertDialogCancel className="cursor-pointer">Cancel</AlertDialogCancel>
+          <AlertDialogAction onClick={onConfirm} className="btn-confirm sm:w-fit ">
             Confirm
           </AlertDialogAction>
         </AlertDialogFooter>

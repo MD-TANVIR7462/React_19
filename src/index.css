@@ -155,4 +155,7 @@ background-color: #61a741;
   .btn-confirm{
     @apply w-full rounded-sm! bg-blue-800/80! hover:bg-blue-800/90! text-white transition-all duration-200 cursor-pointer;
   }
+  .bg-green{
+    @apply bg-[#61a741]!
+  }
 }
