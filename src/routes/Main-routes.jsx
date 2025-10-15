@@ -9,6 +9,7 @@ import Clocks from "@/pages/Main/Clocks";
 import Islamic from "@/pages/Main/Islamic";
 import CheckoutPage from "@/pages/SalesPersonDashboard/Checkout";
 import CartPage from "@/pages/SalesPersonDashboard/Cart";
+import SalesPersonLogin from "@/pages/Login/SalesPersonLogin";
 
 // Fetch data outside the component to leverage React Suspense
 
@@ -83,6 +84,11 @@ export const MainRoutePaths = [
         <Gift promise={giftPromise} />
       </Suspense>
     ),
+  },
+  //login page salesperson......
+  {
+    path: "/login",
+    element: <SalesPersonLogin />,
   },
   //sales person Cartpage......
   {
