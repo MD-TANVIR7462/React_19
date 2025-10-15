@@ -1,6 +1,6 @@
 import { X, Plus, Minus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, onRemoveItem }) {
   const cartTotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -42,9 +42,8 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
             <X className="w-5 h-5" />
           </Button>
         </div>
-
         {/* Cart Items */}
-        <div className="flex-1 overflow-y-auto p-4 max-h-[calc(100vh-200px)]">
+        <div className="flex-1 overflow-y-auto p-4 max-h-[calc(100vh-250px)] lg:max-h-[calc(100vh-200px)]">
           {items.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-64 text-center">
               <div className="w-16 h-16 mb-4 text-muted-foreground">
@@ -127,7 +126,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
 
         {/* Footer */}
         {items.length > 0 && (
-          <div className="border-t border-border p-4 bg-muted/5">
+          <div className="border-t border-border p-4 bg-muted/5 border pb-12 h-full">
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg font-semibold">Total:</span>
               <span className="text-xl font-bold text-primary">

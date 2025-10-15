@@ -20,7 +20,7 @@ export default function TopBar({
 
   return (
     <div className="max-w-[1400px] mx-auto px-4  ">
-      <div className="flex items-center justify-between my-2 md:my-4 ">
+      <div className="flex items-center justify-between py-2 md:py-4 ">
         {/* Left side - Logo and Company Name */}
         <div className="flex items-center space-x-3 ">
           <div className="flex-shrink-0">

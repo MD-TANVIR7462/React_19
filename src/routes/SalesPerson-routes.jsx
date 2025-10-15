@@ -2,7 +2,8 @@ import SalesPersonDashboardStats from "@/components/SalesPersonDashboard/Dashboa
 import { CustomerList } from "@/pages/SalesPersonDashboard/CustomerList";
 import InvoiceList from "@/pages/SalesPersonDashboard/InvoiceList";
 import OrderHistory from "@/pages/SalesPersonDashboard/OrderHistory";
-import { SalesManProfile } from "@/pages/SalesPersonDashboard/SalesManProfile";
+import SalesManProfile from "@/pages/SalesPersonDashboard/SalesManProfile";
+
 
 export const SalesPersonRoutePaths = [
   {

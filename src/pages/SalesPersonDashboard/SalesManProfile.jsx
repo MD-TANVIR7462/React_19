@@ -5,8 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Pencil, Save, X } from "lucide-react";
-
-export function SalesManProfile() {
+import { motion } from "framer-motion";
+const SalesManProfile = () => {
   const [profile, setProfile] = useState({
     name: "Joe Draft",
     email: "joe.draft@gmail.com",
@@ -42,9 +42,9 @@ export function SalesManProfile() {
 
   return (
     <div className=" mx-auto lg:w-[70dvw] xl:w-full">
-      <Card className="shadow-md border border-gray-200 bg-gradient-to-br from-white to-gray-50">
+      <Card className="shadow-md border border-gray-200 bg-gradient-to-br from-white to-gray-50 rounded-sm">
         <CardHeader className="flex flex-row items-center justify-between pb-4 border-b">
-          <CardTitle className="text-xl font-semibold text-gray-800">Profile Information</CardTitle>
+       {!isEditing &&<CardTitle className="sm:text-xl font-semibold text-gray-800">Profile Information</CardTitle>}   
 
           {!isEditing ? (
             <Button
@@ -53,19 +53,19 @@ export function SalesManProfile() {
               className="cursor-pointer hover:bg-gray-100 transition-colors"
             >
               <Pencil className="h-4 w-4 mr-2 text-gray-600" />
-              Edit Profile
+              <span className="hidden sm:block">Edit Profile</span>
             </Button>
           ) : (
-            <div className="flex gap-2">
+            <div className="flex gap-2 w-full   justify-center">
               <Button onClick={handleCancel} variant="outline" className="cursor-pointer hover:bg-gray-100">
-                <X className="h-4 w-4 mr-2 text-gray-600" />
+                <X className="h-4 w-4 mr-2 text-gray-600 hidden sm:block" />
                 Cancel
               </Button>
               <Button
                 onClick={handleSave}
                 className="cursor-pointer bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white shadow-sm"
               >
-                <Save className="h-4 w-4 mr-2" />
+                <Save className="h-4 w-4 mr-2  hidden sm:block" />
                 Save Changes
               </Button>
             </div>
@@ -214,4 +214,5 @@ export function SalesManProfile() {
       </Card>
     </div>
   );
-}
+};
+export default SalesManProfile;
