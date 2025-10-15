@@ -143,7 +143,7 @@ export default function CartSidebar({ isOpen, onClose, items, onUpdateQuantity, 
                 View Cart
               </Button>
 
-              <Button onClick={handleCheckout} className="w-full cursor-pointer green-background">
+              <Button onClick={handleCheckout}  className="btn-primary">
                 Checkout
               </Button>
             </div>

@@ -126,7 +126,7 @@ export function AddressEditModal({ open, onOpenChange, address, onSave, title })
           </Button>
           <Button 
             onClick={handleSave} 
-            className="flex-1 bg-blue-800/80 hover:bg-blue-800/90 text-white transition-all duration-200 cursor-pointer"
+            className="flex-1 btn-confirm"
           >
             Save Changes
           </Button>

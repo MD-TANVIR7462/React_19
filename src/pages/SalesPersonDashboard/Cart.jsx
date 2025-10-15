@@ -8,7 +8,6 @@ import { ProductEditModal } from "@/components/SalesPersonDashboard/Checkout/Pro
 import { EmailCustomerModal } from "@/components/SalesPersonDashboard/Checkout/EmailOrderModal";
 import { CartItem } from "@/components/SalesPersonDashboard/Checkout/CartItem";
 
-
 const CartPage = () => {
   const [products, setProducts] = useState(initialProducts);
   const [emailModalOpen, setEmailModalOpen] = useState(false);
@@ -120,7 +119,7 @@ const CartPage = () => {
                 </CardContent>
                 <CardFooter className="flex flex-col gap-3 border-t border-gray-200 bg-gray-50 py-6">
                   <Button
-                    className="w-full rounded-sm bg-blue-800/80 hover:bg-blue-800/90 text-white transition-all duration-200 cursor-pointer"
+                    className="btn-confirm"
                     size="lg"
                     onClick={() => setEmailModalOpen(true)}
                     disabled={products.length === 0}
@@ -130,11 +129,7 @@ const CartPage = () => {
                   </Button>
 
                   <Link to="/checkout" className="w-full">
-                    <Button
-                      className="w-full rounded-sm bg-green-800/80 hover:bg-green-800/90 text-white transition-all duration-200 cursor-pointer"
-                      size="lg"
-                      disabled={products.length === 0}
-                    >
+                    <Button className="btn-primary" size="lg" disabled={products.length === 0}>
                       <CreditCard className="mr-2 h-5 w-5" />
                       Proceed to Checkout
                     </Button>

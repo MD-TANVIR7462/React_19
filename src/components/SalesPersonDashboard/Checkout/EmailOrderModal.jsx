@@ -71,7 +71,7 @@ export function EmailCustomerModal({ open, onOpenChange, cartTotal }) {
           >
             Cancel
           </Button>
-          <Button onClick={handleSendEmail} className="flex-1 w-full rounded-sm bg-blue-800/80 hover:bg-blue-800/90 text-white transition-all duration-200 cursor-pointer">
+          <Button onClick={handleSendEmail} className="flex-1 btn-confirm">
             <Mail className="mr-2 h-4 w-4" />
             Send Email
           </Button>

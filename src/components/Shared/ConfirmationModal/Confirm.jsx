@@ -24,9 +24,9 @@ const Confirm = ({ open, onOpenChange, onConfirm, text }) => {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>No, Cancel</AlertDialogCancel>
-          <AlertDialogAction onClick={onConfirm} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Yes, Confirm Order
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogAction onClick={onConfirm} className="btn-confirm w-fit! ">
+            Confirm
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

@@ -175,7 +175,7 @@ export default function CheckoutPage() {
                 </div>
 
                 <Button
-                  className="w-full bg-green-600/90 hover:bg-green-700/80 text-white transition-all duration-200 cursor-pointer"
+                  className="btn-primary"
                   size="lg"
                   onClick={handleSaveOrder}
                   disabled={!selectedCustomer}

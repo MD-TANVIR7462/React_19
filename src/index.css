@@ -146,3 +146,13 @@ background-color: #61a741;
   }
 }
 
+/* classes with using tailwind  */
+
+@layer components{
+  .btn-primary{
+    @apply w-full cursor-pointer bg-[#61a741]! rounded-sm!;
+  }
+  .btn-confirm{
+    @apply w-full rounded-sm! bg-blue-800/80! hover:bg-blue-800/90! text-white transition-all duration-200 cursor-pointer;
+  }
+}

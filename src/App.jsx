@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 const App = () => {
   return (
     <>
-      <Toaster position="top-right"/>
+      <Toaster position="top-right" />
       <RouterProvider router={router} />
     </>
   );
