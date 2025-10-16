@@ -14,7 +14,7 @@ const Confirm = ({ open, onOpenChange, onConfirm, text }) => {
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent>
-        <AlertDialogHeader className="flex items-center gap-2">
+        <AlertDialogHeader className="flex md:block items-center gap-2">
           <AlertDialogTitle className="flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-primary" />
             <span className="capitalize">Confirm {text}</span>
