@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import SalesPersonLayout from "@/layouts/SalesPersonLayout";
 import { MainRoutePaths } from "./Main-routes";
 import { SalesPersonRoutePaths } from "./SalesPerson-routes";
+import SalesOrderInvoice from "@/components/Reports/AgingReport";
 
 export const router = createBrowserRouter([
   {
@@ -17,5 +18,9 @@ export const router = createBrowserRouter([
     element: <SalesPersonLayout />,
     children: SalesPersonRoutePaths,
     errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/sales-order-report",
+    element: <SalesOrderInvoice />,
   },
 ]);

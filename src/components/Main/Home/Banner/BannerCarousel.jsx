@@ -13,8 +13,15 @@ const HeroSlider = () => {
 
   // eslint-disable-next-line no-unused-vars
   const handleShopNow = () => {
-    console.log("Navigate to shop");
-    // navigation logic here
+    const width = 800;
+    const height = 800;
+    const left = window.screen.width / 2 - width / 2;
+    const top = window.screen.height / 2 - height / 2;
+    window.open(
+      "http://localhost:5173/sales-order-report",
+      "myPopup",
+      `width=${width},height=${height},top=${top},left=${left},scrollbars=yes,resizable=yes`
+    );
   };
 
   //......Framer Motion Variants....//

@@ -1,13 +1,6 @@
 // SalesOrder.jsx
 import React from "react";
-import {
-  Page,
-  Text,
-  View,
-  Document,
-  StyleSheet,
-  PDFViewer,
-} from "@react-pdf/renderer";
+import { Page, Text, View, Document, StyleSheet, PDFViewer } from "@react-pdf/renderer";
 
 // Styles
 const styles = StyleSheet.create({
@@ -42,7 +35,6 @@ const styles = StyleSheet.create({
   },
   salesOrderSecondRow: {
     flexDirection: "row",
-   
   },
   salesOrderCellLabel: {
     width: "50%",
@@ -96,10 +88,10 @@ const styles = StyleSheet.create({
     borderRightWidth: 0,
     borderBottomWidth: 0,
     marginTop: 15,
-    marginBottom: 0
+    marginBottom: 0,
   },
   tableRow: {
-    flexDirection: "row"
+    flexDirection: "row",
   },
   SubheaderCell: {
     flex: 1,
@@ -109,7 +101,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 0,
     padding: 4,
     fontWeight: "semibold",
-    fontSize: 10
+    fontSize: 10,
   },
   headerCell: {
     flex: 1,
@@ -118,10 +110,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderLeftWidth: 0,
     borderTopWidth: 0,
-    paddingVertical:7,
-    paddingHorizontal:4,
+    paddingVertical: 7,
+    paddingHorizontal: 4,
     fontWeight: "semibold",
-    fontSize: 10
+    fontSize: 10,
   },
   cell: {
     flex: 1,
@@ -130,7 +122,7 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0,
     borderTopWidth: 0,
     padding: 4,
-    fontSize: 10
+    fontSize: 10,
   },
   footer: {
     position: "absolute",
@@ -138,16 +130,16 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     textAlign: "center",
-    fontSize: 8
+    fontSize: 8,
   },
   divider: {
     borderBottomWidth: 1,
     borderBottomColor: "#000",
     borderBottomStyle: "solid",
-    marginVertical: 10
+    marginVertical: 10,
   },
 
-    absoluteDivider: {
+  absoluteDivider: {
     position: "absolute",
     bottom: 40,
     left: 20,
@@ -155,24 +147,55 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#000",
     borderBottomStyle: "solid",
-  }
-,
+  },
   alignRight: {
-    textAlign: "right"
+    textAlign: "right",
   },
   bold: {
-    fontWeight: "bold"
-  }
+    fontWeight: "bold",
+  },
 });
 
 // Dynamic data generator
 const generateOrderData = (itemCount = 20) => {
   const baseItems = [
-    { cases: 1, item: "22-040", description: "", unitPrice: 13.00, qty: 16, upc: "", amount: 208.00 },
-    { cases: 1, item: "37-771", description: "Rooster Fountain &/ct", unitPrice: 15.00, qty: 6, upc: "607192377714", amount: 90.00 },
-    { cases: 1, item: "75-615", description: "Glass Jug wiß Cup Set &/ct", unitPrice: 12.00, qty: 6, upc: "607192756151", amount: 72.00 },
-    { cases: 1, item: "86-043", description: "Porcelain Center Piece &/ct", unitPrice: 35.00, qty: 5, upc: "607192860438", amount: 175.00 },
-    { cases: 1, item: "87-633", description: "4pcs Art Deco Set &/ct", unitPrice: 13.50, qty: 8, upc: "607192876330", amount: 108.00 }
+    { cases: 1, item: "22-040", description: "", unitPrice: 13.0, qty: 16, upc: "", amount: 208.0 },
+    {
+      cases: 1,
+      item: "37-771",
+      description: "Rooster Fountain &/ct",
+      unitPrice: 15.0,
+      qty: 6,
+      upc: "607192377714",
+      amount: 90.0,
+    },
+    {
+      cases: 1,
+      item: "75-615",
+      description: "Glass Jug wiß Cup Set &/ct",
+      unitPrice: 12.0,
+      qty: 6,
+      upc: "607192756151",
+      amount: 72.0,
+    },
+    {
+      cases: 1,
+      item: "86-043",
+      description: "Porcelain Center Piece &/ct",
+      unitPrice: 35.0,
+      qty: 5,
+      upc: "607192860438",
+      amount: 175.0,
+    },
+    {
+      cases: 1,
+      item: "87-633",
+      description: "4pcs Art Deco Set &/ct",
+      unitPrice: 13.5,
+      qty: 8,
+      upc: "607192876330",
+      amount: 108.0,
+    },
   ];
 
   const items = [];
@@ -181,7 +204,7 @@ const generateOrderData = (itemCount = 20) => {
     items.push({
       ...baseItem,
       item: `${baseItem.item}-${i + 1}`,
-      amount: baseItem.unitPrice * baseItem.qty * (Math.floor(i / 5) + 1)
+      amount: baseItem.unitPrice * baseItem.qty * (Math.floor(i / 5) + 1),
     });
   }
 
@@ -196,21 +219,21 @@ const generateOrderData = (itemCount = 20) => {
       address: "20 Berry Street",
       cityStateZip: "Brooklyn, NY 11249",
       phone: "718-486-7832",
-      email: "starofmirtex@aol.com"
+      email: "starofmirtex@aol.com",
     },
     billTo: {
       name: "86 Furniture",
       address: "86-07 Roosevelt Ave",
       cityStateZip: "Jackson Heights, NY, 11372",
       phone: "718-426-3747",
-      email: " "
+      email: " ",
     },
     shipTo: {
       name: "86 Furniture",
       address: "86-07 Roosevelt Ave",
       cityStateZip: "Jackson Heights, NY, 11372",
       phone: "718-426-3747",
-      email: " "
+      email: " ",
     },
     resaleCertificate: "45",
     orderNumber: "182",
@@ -219,22 +242,22 @@ const generateOrderData = (itemCount = 20) => {
       customerNumber: "06768",
       poNumber: "-",
       terms: "test_terms",
-      salesman: "3"
+      salesman: "3",
     },
     items,
     subtotal,
     allowance,
-    total
+    total,
   };
 };
 
 // Constants for pagination
-const ITEMS_PER_PAGE =18;
+const ITEMS_PER_PAGE = 18;
 
 // Component to split items into pages
 const SalesOrderDocument = ({ orderData }) => {
   const { items, subtotal, allowance, total } = orderData;
-  
+
   // Split items into chunks for pagination
   const itemPages = [];
   for (let i = 0; i < items.length; i += ITEMS_PER_PAGE) {
@@ -250,9 +273,7 @@ const SalesOrderDocument = ({ orderData }) => {
           <View style={styles.row}>
             {/* Company Info */}
             <View style={styles.companyInfo}>
-              <Text style={{ fontSize: 16, fontWeight: "bold" }}>
-                {orderData.company.name}
-              </Text>
+              <Text style={{ fontSize: 16, fontWeight: "bold" }}>{orderData.company.name}</Text>
               <Text>{orderData.company.address}</Text>
               <Text>{orderData.company.cityStateZip}</Text>
               <Text>{orderData.company.phone}</Text>
@@ -319,7 +340,7 @@ const SalesOrderDocument = ({ orderData }) => {
               <Text style={[styles.cell, { flex: 1 }]}>{orderData.customerInfo.salesman}</Text>
             </View>
           </View>
-{/* 
+          {/* 
           <View style={styles.divider} /> */}
 
           {/* Items Table */}
@@ -393,7 +414,6 @@ const SalesOrderDocument = ({ orderData }) => {
           {/* Footer with dynamic page numbers */}
           <View style={[styles.absoluteDivider]} />
           <Text style={styles.footer}>
-            
             Page {pageIndex + 1} of {itemPages.length}
           </Text>
         </Page>
@@ -403,9 +423,9 @@ const SalesOrderDocument = ({ orderData }) => {
 };
 
 // Main component
-const SalesOrder = ({ itemCount = 40 }) => {
+const SalesOrderInvoice = ({ itemCount = 40 }) => {
   const orderData = generateOrderData(itemCount);
-  
+
   return (
     <PDFViewer style={{ width: "100%", height: "100vh" }}>
       <SalesOrderDocument orderData={orderData} />
@@ -417,7 +437,7 @@ const SalesOrder = ({ itemCount = 40 }) => {
 export const DynamicSalesOrder = ({ data }) => {
   // If custom data is provided, use it; otherwise generate demo data
   const orderData = data || generateOrderData(20);
-  
+
   return (
     <PDFViewer style={{ width: "100%", height: "100vh" }}>
       <SalesOrderDocument orderData={orderData} />
@@ -425,4 +445,4 @@ export const DynamicSalesOrder = ({ data }) => {
   );
 };
 
-export default SalesOrder;
+export default SalesOrderInvoice;

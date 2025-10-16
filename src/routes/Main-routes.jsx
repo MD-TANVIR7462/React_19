@@ -99,4 +99,5 @@ export const MainRoutePaths = [
     path: "/checkout",
     element: <CheckoutPage />,
   },
+ 
 ];
