@@ -44,10 +44,10 @@ const ProductImage = ({ src, alt, className, callForm = "swiper" }) => {
             loading ? "opacity-0" : "opacity-100"
           } transition-opacity duration-300`}
           onLoad={() => setLoading(false)}
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 0.1 }}
+          // initial={{ opacity: 0, scale: 0.95 }}
+          // animate={{ opacity: 1, scale: 1 }}
+          // exit={{ opacity: 0, scale: 0.95 }}
+          // transition={{ duration: 0.1 }}
           onError={() => {
             setError(true);
             setLoading(false);
